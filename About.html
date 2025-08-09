@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>VK Creatives (official site)</title>
+  <meta charset="utf-8" />
+  <meta name="author" content="Vamsi Kurli" />
+  <meta name="description" content="VK Creatives (official website)" />
+  <meta name="keywords" content="HTML,CSS,Feature film, film festival" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="Stylesheet/stylesheet2.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster" />
+
+  <style>
+    @media only screen and (max-width: 768px) {
+      .Header1 {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        gap: 10px;
+      }
+
+      .mainslogan {
+        position: relative;
+        top: -30px;
+        font-size: 16px;
+      }
+
+      .Header1-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .hamburger {
+        display: block !important;
+        background: none;
+        border: 2px solid #FFD700;
+        border-radius: 5px;
+        font-size: 28px;
+        color: #FFD700;
+        cursor: pointer;
+        padding: 5px 10px;
+      }
+
+      .mobilenav {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        background-color: #ffd702;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 0px;
+      }
+
+      .mobilenav.expanded {
+        display: flex;
+      }
+
+      .programicons a {
+        font-size: 18px;
+        display: block;
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+      }
+
+      .contactext {
+        font-size: 24px;
+        padding: 10px;
+      }
+
+      .aboutparagraph {
+        padding: 15px;
+        font-size: 16px;
+      }
+
+      .founders {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 20px;
+      }
+
+      .vamsinfo img {
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+      }
+
+      .founderinfo3 {
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .aboutlogo img {
+        width: 150px;
+        height: auto;
+      }
+    }
+
+    .hamburger {
+      display: none;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .indexContainer,
+    .Header1,
+    .Header1-top,
+    .mobilenav,
+    .aboutcontainer,
+    .footer {
+      max-width: 100vw;
+      box-sizing: border-box;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById("mnav");
+      nav.classList.toggle("expanded");
+      console.log("Menu toggled");
+    }
+    
+    // Ensure the script runs after the page loads
+    document.addEventListener("DOMContentLoaded", function() {
+      console.log("Page loaded");
+      var hamburger = document.querySelector(".hamburger");
+      if (hamburger) {
+        hamburger.addEventListener("click", function(e) {
+          e.preventDefault();
+          toggleMenu();
+        });
+      }
+    });
+  </script>
+</head>
+
+<body>
+  <div class="indexContainer">
+    <div class="Header1 mobileView">
+      <div class="Header1-top">
+        <img class="mainlogo" alt="" src="Images/Logo 3.2.png" width="200" height="100" />
+        <!--        <p class="mainslogan">Brampton Short Film-Fest</p>-->
+        <button class="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+
+      <nav id="mnav" class="Header1 Nav mobilenav">
+        <div class="programicons"><a href="index.html">Home</a></div>
+        <div class="programicons"><a href="About.html">About Us</a></div>
+        <div class="programicons"><a href="Submit.html">Submit</a></div>
+        <div class="programicons"><a href="Contact.html">Contact Us</a></div>
+      </nav>
+    </div>
+
+    <div class="aboutcontainer">
+      <h4>About Us</h4>
+      <div class="aboutparagraph">
+        <p>
+          Welcome to the Brampton Film Festival – an exciting online short
+          film festival that celebrates the power of storytelling, creativity,
+          and global community! While we’re proudly based in Brampton, we’ve
+          gone digital to make it easier for filmmakers and film lovers from
+          all over the world to join in the magic of cinema.<br /><br />
+          Our festival is dedicated to showcasing short films of all
+          genres—from drama to documentary, animation to experimental—and
+          providing a platform for emerging filmmakers to share their work
+          with a global audience.<br /><br />
+          By going online, we break down geographical barriers and create a
+          truly inclusive festival experience. Filmmakers and audiences from
+          around the world can connect, engage, and experience the power of
+          film from the comfort of their homes.<br /><br />
+          Our mission is to empower filmmakers, inspire creativity, and offer
+          a unique space for all kinds of cinematic voices. We aim to create a
+          vibrant community where fresh perspectives are celebrated, new
+          talent is discovered, and meaningful conversations are sparked.<br /><br />
+          So, grab your popcorn, sit back, and join us as we embark on a
+          memorable online journey through the world of short films!
+        </p>
+      </div>
+
+      <h4 class="foundersheader">Founders</h4>
+
+      <div class="founders">
+        <div class="vamsinfo">
+          <div class="founderpic"> <img src="Images/Founders/Vamsi.png" alt="Vamsi Kurli" /> </div>
+          <p>Vamsi Kurli <i> , Founder</i></p>
+          <p class="founderinfo3">
+            Vamsi Kurli is the founder of KVP Pictures and a graduate from a
+            prestigious Film and Television Program in Western Canada. He has
+            directed the feature film "She's Back In My Life"—released in
+            Edmonton and aired on multiple TV networks such as Shaw TV. It has
+            also been selected by major film festivals across Canada.
+          </p>
+        </div>
+
+<!--        <div class="vamsinfo">-->
+<!--          <img src="Images/Founders/Vamsi.png" alt="Vamsi Kurli" />-->
+<!--          <p>Vamsi Kurli</p>-->
+<!--          <p class="founderinfo3">-->
+<!--            Vamsi Kurli is the founder of KVP Pictures and a graduate from a-->
+<!--            prestigious Film and Television Program in Western Canada. He has-->
+<!--            directed the feature film "She's Back In My Life"—released in-->
+<!--            Edmonton and aired on multiple TV networks such as Shaw TV. It has-->
+<!--            also been selected by major film festivals across Canada.-->
+<!--          </p>-->
+<!--        </div>-->
+
+<!--        <div class="vamsinfo">-->
+<!--          <img src="Images/Founders/Vamsi.png" alt="Vamsi Kurli" />-->
+<!--          <p>Vamsi Kurli</p>-->
+<!--          <p class="founderinfo3">-->
+<!--            Vamsi Kurli is the founder of KVP Pictures and a graduate from a-->
+<!--            prestigious Film and Television Program in Western Canada. He has-->
+<!--            directed the feature film "She's Back In My Life"—released in-->
+<!--            Edmonton and aired on multiple TV networks such as Shaw TV. It has-->
+<!--            also been selected by major film festivals across Canada.-->
+<!--          </p>-->
+<!--        </div>-->
+      </div>
+
+      <div class="rulescontainer">
+        <h4 class="rulesheader">Rules & Regulations</h4>
+      </div>
+
+      <div class="rules">
+        <li>Submitters must be at least 18 years of age.</li>
+          <li>Films should be no longer than 40 minutes in length.</li>
+          <li>The submitter must confirm that they have the full legal rights to the film and that it does not
+            infringe
+            on
+            any copyrights, trademarks, or other intellectual property.</li>
+          <li>Films must have been completed within the past year.</li>
+          <li>We accept films from all genres.</li>
+          <li>Films in languages other than English are welcome, but must include English subtitles.</li>
+          <li>All submissions must be made via FilmFreeway.com.</li>
+          <li>A non-refundable submission fee is required for all entries.</li>
+          <li>A filmmaker may submit more than one film, but each film must be submitted separately with its own entry
+            fee.</li>
+          <li>Films in languages other than English are welcome, but must include English subtitles.</li>
+          <li>Only fully completed films will be accepted—works-in-progress are not eligible.</li>
+          <li>By submitting, filmmakers grant the festival permission to use stills, trailers, and other promotional
+            materials for marketing purposes, including online and social media. </li>
+          <li>Accepted films must be provided in the required digital format (e.g., MP4, MOV, etc.) by the
+            festival’s
+            specified deadline.</li>
+          <li>Containing hate speech, explicit violence, or explicit adult content may be disqualified.</li>
+          <li>Not all submissions will be selected; final decisions are made by our judging panel.</li>
+      </div>
+    </div>
+
+<!--      <div class="aboutlogo">-->
+<!--        <img src="Images/Logo 3.2.png" width="100" height="100" />-->
+<!--      </div>-->
+<!--    </div>-->
+
+    <footer class="footer">
+      <div class="contactContainer">
+        <!--          <img-->
+        <!--            class="footericons"-->
+        <!--            src="Images/Nav Icons/Email Icon.png"-->
+        <!--            alt="email icon"-->
+        <!--            width="40"-->
+        <!--            height="30"-->
+        <!--          />-->
+        <p>info@bsff.ca</p>
+      </div>
+      <div class="contactContainer">
+        <!--          <img-->
+        <!--            class="footericons"-->
+        <!--            src="Images/Nav Icons/telephone_1104586.png"-->
+        <!--            alt="telephone icon"-->
+        <!--            width="40"-->
+        <!--            height="30"-->
+        <!--          />-->
+        <p>+1 647-702-7148</p>
+      </div>
+      <div class="contactContainer">
+        <!--          <img-->
+        <!--            class="footericons"-->
+        <!--            src="Images/Nav Icons/world-wide-web.png"-->
+        <!--            alt="web icon"-->
+        <!--            width="40"-->
+        <!--            height="30"-->
+        <!--          />-->
+        <p>bramptonshortfilm-fest.com</p>
+      </div>
+      <i> <p>Short in Length, Long in Impact.</p> </i>
+      <p>&copy; 2025 Brampton Film-Fest (Official Site)</p>
+    </footer>
+  </div>
+</body>
+
+</html>
