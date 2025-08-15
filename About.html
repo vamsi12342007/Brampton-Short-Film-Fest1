@@ -137,13 +137,13 @@
       nav.classList.toggle("expanded");
       console.log("Menu toggled");
     }
-    
+
     // Ensure the script runs after the page loads
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
       console.log("Page loaded");
       var hamburger = document.querySelector(".hamburger");
       if (hamburger) {
-        hamburger.addEventListener("click", function(e) {
+        hamburger.addEventListener("click", function (e) {
           e.preventDefault();
           toggleMenu();
         });
@@ -213,29 +213,29 @@
           </p>
         </div>
 
-<!--        <div class="vamsinfo">-->
-<!--          <img src="Images/Founders/Vamsi.png" alt="Vamsi Kurli" />-->
-<!--          <p>Vamsi Kurli</p>-->
-<!--          <p class="founderinfo3">-->
-<!--            Vamsi Kurli is the founder of KVP Pictures and a graduate from a-->
-<!--            prestigious Film and Television Program in Western Canada. He has-->
-<!--            directed the feature film "She's Back In My Life"—released in-->
-<!--            Edmonton and aired on multiple TV networks such as Shaw TV. It has-->
-<!--            also been selected by major film festivals across Canada.-->
-<!--          </p>-->
-<!--        </div>-->
+        <!--        <div class="vamsinfo">-->
+        <!--          <img src="Images/Founders/Vamsi.png" alt="Vamsi Kurli" />-->
+        <!--          <p>Vamsi Kurli</p>-->
+        <!--          <p class="founderinfo3">-->
+        <!--            Vamsi Kurli is the founder of KVP Pictures and a graduate from a-->
+        <!--            prestigious Film and Television Program in Western Canada. He has-->
+        <!--            directed the feature film "She's Back In My Life"—released in-->
+        <!--            Edmonton and aired on multiple TV networks such as Shaw TV. It has-->
+        <!--            also been selected by major film festivals across Canada.-->
+        <!--          </p>-->
+        <!--        </div>-->
 
-<!--        <div class="vamsinfo">-->
-<!--          <img src="Images/Founders/Vamsi.png" alt="Vamsi Kurli" />-->
-<!--          <p>Vamsi Kurli</p>-->
-<!--          <p class="founderinfo3">-->
-<!--            Vamsi Kurli is the founder of KVP Pictures and a graduate from a-->
-<!--            prestigious Film and Television Program in Western Canada. He has-->
-<!--            directed the feature film "She's Back In My Life"—released in-->
-<!--            Edmonton and aired on multiple TV networks such as Shaw TV. It has-->
-<!--            also been selected by major film festivals across Canada.-->
-<!--          </p>-->
-<!--        </div>-->
+        <!--        <div class="vamsinfo">-->
+        <!--          <img src="Images/Founders/Vamsi.png" alt="Vamsi Kurli" />-->
+        <!--          <p>Vamsi Kurli</p>-->
+        <!--          <p class="founderinfo3">-->
+        <!--            Vamsi Kurli is the founder of KVP Pictures and a graduate from a-->
+        <!--            prestigious Film and Television Program in Western Canada. He has-->
+        <!--            directed the feature film "She's Back In My Life"—released in-->
+        <!--            Edmonton and aired on multiple TV networks such as Shaw TV. It has-->
+        <!--            also been selected by major film festivals across Canada.-->
+        <!--          </p>-->
+        <!--        </div>-->
       </div>
 
       <div class="rulescontainer">
@@ -244,69 +244,104 @@
 
       <div class="rules">
         <li>Submitters must be at least 18 years of age.</li>
-          <li>Films should be no longer than 40 minutes in length.</li>
-          <li>The submitter must confirm that they have the full legal rights to the film and that it does not
-            infringe
-            on
-            any copyrights, trademarks, or other intellectual property.</li>
-          <li>Films must have been completed within the past year.</li>
-          <li>We accept films from all genres.</li>
-          <li>Films in languages other than English are welcome, but must include English subtitles.</li>
-          <li>All submissions must be made via FilmFreeway.com.</li>
-          <li>A non-refundable submission fee is required for all entries.</li>
-          <li>A filmmaker may submit more than one film, but each film must be submitted separately with its own entry
-            fee.</li>
-          <li>Films in languages other than English are welcome, but must include English subtitles.</li>
-          <li>Only fully completed films will be accepted—works-in-progress are not eligible.</li>
-          <li>By submitting, filmmakers grant the festival permission to use stills, trailers, and other promotional
-            materials for marketing purposes, including online and social media. </li>
-          <li>Accepted films must be provided in the required digital format (e.g., MP4, MOV, etc.) by the
-            festival’s
-            specified deadline.</li>
-          <li>Containing hate speech, explicit violence, or explicit adult content may be disqualified.</li>
-          <li>Not all submissions will be selected; final decisions are made by our judging panel.</li>
+        <li>Films should be no longer than 40 minutes in length.</li>
+        <li>The submitter must confirm that they have the full legal rights to the film and that it does not
+          infringe
+          on
+          any copyrights, trademarks, or other intellectual property.</li>
+        <li>Films must have been completed within the past year.</li>
+        <li>We accept films from all genres.</li>
+        <li>Films in languages other than English are welcome, but must include English subtitles.</li>
+        <li>All submissions must be made via FilmFreeway.com.</li>
+        <li>A non-refundable submission fee is required for all entries.</li>
+        <li>A filmmaker may submit more than one film, but each film must be submitted separately with its own entry
+          fee.</li>
+        <li>Films in languages other than English are welcome, but must include English subtitles.</li>
+        <li>Only fully completed films will be accepted—works-in-progress are not eligible.</li>
+        <li>By submitting, filmmakers grant the festival permission to use stills, trailers, and other promotional
+          materials for marketing purposes, including online and social media. </li>
+        <li>Accepted films must be provided in the required digital format (e.g., MP4, MOV, etc.) by the
+          festival’s
+          specified deadline.</li>
+        <li>Containing hate speech, explicit violence, or explicit adult content may be disqualified.</li>
+        <li>Not all submissions will be selected; final decisions are made by our judging panel.</li>
       </div>
     </div>
 
-<!--      <div class="aboutlogo">-->
-<!--        <img src="Images/Logo 3.2.png" width="100" height="100" />-->
-<!--      </div>-->
-<!--    </div>-->
+    <div class="rulescontainer">
+      <h4 class="rulesheader">Awards</h4>
+      <p id="aboutparagraph">All selected films will be featured on our official website for a limited time. During this period, viewers
+        will have the opportunity to watch and vote for their favorite films. The film receiving the highest number of
+        audience votes will be honored with the Audience Award.</p>
+    </div>
 
-    <footer class="footer">
-      <div class="contactContainer">
-        <!--          <img-->
-        <!--            class="footericons"-->
-        <!--            src="Images/Nav Icons/Email Icon.png"-->
-        <!--            alt="email icon"-->
-        <!--            width="40"-->
-        <!--            height="30"-->
-        <!--          />-->
-        <p>info@bsff.ca</p>
-      </div>
-      <div class="contactContainer">
-        <!--          <img-->
-        <!--            class="footericons"-->
-        <!--            src="Images/Nav Icons/telephone_1104586.png"-->
-        <!--            alt="telephone icon"-->
-        <!--            width="40"-->
-        <!--            height="30"-->
-        <!--          />-->
-        <p>+1 647-702-7148</p>
-      </div>
-      <div class="contactContainer">
-        <!--          <img-->
-        <!--            class="footericons"-->
-        <!--            src="Images/Nav Icons/world-wide-web.png"-->
-        <!--            alt="web icon"-->
-        <!--            width="40"-->
-        <!--            height="30"-->
-        <!--          />-->
-        <p>bramptonshortfilm-fest.com</p>
-      </div>
-      <i> <p>Short in Length, Long in Impact.</p> </i>
-      <p>&copy; 2025 Brampton Film-Fest (Official Site)</p>
-    </footer>
+    <h4>Award Categories:</h4>
+
+    <div class="rules">
+      <li>Audience Award</li>
+      <li>Best Drama Film</li>
+      <li>Best Action Film</li>
+      <li>Best Animation film</li>
+      <li>Best Horror film</li>
+      <li>Best Comedy Film</li>
+      <li>Best Documentary Film</li>
+      <li>Best Student Film</li>
+      <li>Best Fantasy Film.</li>
+      <li>Best Foreign Film</li>
+      <li>Best Director Award</li>
+      <li>Best Actor Award </li>
+      <li>Best Actress Award </li>
+      <li>Best Supporting actor</li>
+      <li>Best Supporting Actress</li>
+      <li>Best editing </li>
+      <li>Best Sound</li>
+      <li>Best Make-up</li>
+    </div>
+  </div>
+
+
+
+  <!--      <div class="aboutlogo">-->
+  <!--        <img src="Images/Logo 3.2.png" width="100" height="100" />-->
+  <!--      </div>-->
+  <!--    </div>-->
+
+  <footer class="footer">
+    <div class="contactContainer">
+      <!--          <img-->
+      <!--            class="footericons"-->
+      <!--            src="Images/Nav Icons/Email Icon.png"-->
+      <!--            alt="email icon"-->
+      <!--            width="40"-->
+      <!--            height="30"-->
+      <!--          />-->
+      <p>bramptonshortfilmfest@gmail.com</p>
+    </div>
+    <div class="contactContainer">
+      <!--          <img-->
+      <!--            class="footericons"-->
+      <!--            src="Images/Nav Icons/telephone_1104586.png"-->
+      <!--            alt="telephone icon"-->
+      <!--            width="40"-->
+      <!--            height="30"-->
+      <!--          />-->
+
+    </div>
+    <div class="contactContainer">
+      <!--          <img-->
+      <!--            class="footericons"-->
+      <!--            src="Images/Nav Icons/world-wide-web.png"-->
+      <!--            alt="web icon"-->
+      <!--            width="40"-->
+      <!--            height="30"-->
+      <!--          />-->
+      <p>bramptonshortfilm-fest.com</p>
+    </div>
+    <i>
+      <p>Short in Length, Long in Impact.</p>
+    </i>
+    <p>&copy; 2025 Brampton Film-Fest (Official Site)</p>
+  </footer>
   </div>
 </body>
 

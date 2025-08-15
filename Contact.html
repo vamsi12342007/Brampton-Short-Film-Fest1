@@ -7,7 +7,6 @@
     <meta name="description" content="VK Creatives (official website)" />
     <meta name="keywords" content="HTML,CSS,Feature film, film festival" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -156,11 +155,34 @@
         height: auto;
       }
     </style>
-
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init({
+            publicKey: "dnRIthpO5EfWd-hKa",
+          });
+      })();
+    </script>
     <script>
-      function toggleMenu() {
+      function toggleMenu(){
         var nav = document.getElementById("mnav");
         nav.classList.toggle("expanded");
+      }
+      function contactSubmit(event){
+        event.preventDefault();
+        let form = event.target
+        // let name = [event.target[0].value, event.target[1].value].join(" ")
+        // let emailid = event.target[2].value
+        // let phone = event.target[3].value
+        // let msg = event.target[4].value
+        emailjs.sendForm("service_gbxj5gx", "template_kz01ph6", form).then((result) => {
+          form.reset();
+          alert("Your message has been recieved. Thank you for contacting us.")
+        }).catch((err) => {
+          alert("There was some error in submitting the form, please try again. Sorry for inconvenience");
+        });
       }
     </script>
   </head>
@@ -211,30 +233,30 @@
 <!--        <img src="Images/Logo 2.2.png" width="150" height="100" />-->
 <!--      </div>-->
 
-      <form class="ContactForm">
+      <form class="ContactForm" onsubmit="contactSubmit(event)">
         <div>
           <label for="firstnametext">First Name</label>
-          <input id="firstnametext" name="First" type="text" />
+          <input id="firstnametext" name="first" type="text" />
         </div>
 
         <div>
           <label for="lastnametext">Last Name</label>
-          <input id="lastnametext" name="Last" type="text" />
+          <input id="lastnametext" name="last" type="text" />
         </div>
 
         <div>
           <label for="emailtext">Email Address</label>
-          <input id="emailtext" name="Email" type="text" />
+          <input id="emailtext" name="email" type="text" />
         </div>
 
         <div>
           <label for="phonenumbertext">Phone Number</label>
-          <input id="phonenumbertext" name="Phone Number" type="text" />
+          <input id="phonenumbertext" name="phone" type="text" />
         </div>
 
         <div>
           <label for="messageinput">Message</label>
-          <input id="messageinput" type="text" name="Message" />
+          <input id="messageinput" type="text" name="message" />
         </div>
 
         <div>
@@ -251,7 +273,7 @@
           <!--            width="40"-->
           <!--            height="30"-->
           <!--          />-->
-          <p>info@bsff.ca</p>
+          <p>bramptonshortfilmfest@gmail.com</p>
       </div>
       <div class="contactContainer">
           <!--          <img-->
@@ -261,7 +283,7 @@
           <!--            width="40"-->
           <!--            height="30"-->
           <!--          />-->
-          <p>+1 647-702-7148</p>
+          
       </div>
       <div class="contactContainer">
           <!--          <img-->
