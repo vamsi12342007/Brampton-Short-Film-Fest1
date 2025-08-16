@@ -57,6 +57,30 @@ a:active {
   margin-bottom: 70px;
 }
 
+.awards {
+  position: relative;
+  top: 10px;
+  left: 30px;
+  margin: 30px;
+  margin-left: 100px;
+}
+
+#awardtitle {
+  margin-top:-40px;
+  text-align: left;
+  margin-left: 100px;
+  position: relative;
+  top:30px;
+}
+
+.submitimage {
+  position: relative;
+  right:-700px !important;
+  top:-110px;
+  border-radius: 30px;
+  border: 1px solid black;
+}
+
 .rules li {
   margin-bottom: 10px;
   margin-left: 5%;
@@ -208,6 +232,7 @@ a:active {
 .ContactForm {
   color: black;
   position: relative;
+  top:-110px;
   /*border: 3px solid black;*/
   text-align: center;
   padding: 1.5rem;
@@ -247,6 +272,7 @@ a:active {
   color: Black;
   font-size: 1rem;
   position: relative;
+  top:-90px;
   width: 90%;
   max-width: 800px;
   margin: 1.5rem auto;
@@ -257,6 +283,28 @@ a:active {
   color: black;
   font-size: 1rem;
   position: relative;
+  width: 90%;
+  max-width: 800px;
+  margin: 1.5rem auto;
+  padding: 1rem 0;
+}
+
+#aboutparagraph {
+   color: black;
+  font-size: 20px;
+  position: relative;
+  text-align: left;
+  width: 90%;
+  max-width: 800px;
+  margin: 1.5rem auto;
+  padding: 1rem 0;
+}
+
+#awardtext {
+   color: black;
+  font-size: 20px;
+  position: relative;
+  text-align: left;
   width: 90%;
   max-width: 800px;
   margin: 1.5rem auto;
@@ -893,9 +941,10 @@ hr.new4 {
 
   .contactparagraph {
     width: 90%;
-    position: static;
     margin: 20px auto;
     left: 0;
+    position: relative;
+    top:-80px;
   }
 
   /* Submit page styles */
