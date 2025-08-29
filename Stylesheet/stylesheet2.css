@@ -17,17 +17,18 @@ body {
 
 .filmbutton {
   position: relative;
-  right:-200px;
+  display: block;
+  margin: 20px auto;
+  right: 0;
+  left: 0;
+  text-align: center;
 }
 
 .hidden {
   display: none;
 }
 
-#filmbutton {
-  position: relative;
-  left:450px;
-}
+
 
 a:link {
   color:#FFD700 ;
@@ -55,40 +56,69 @@ a:active {
 .vamsinfo img {
   display: block;
   margin: 0 auto;
-  max-width: auto;
-
-  height: 200px;
-
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
 }
 .rules {
   position: relative;
   top: 10px;
-  left: 30px;
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 70px;
 }
 
 .awards {
   position: relative;
   top: 10px;
-  left: 30px;
   margin: 30px;
-  margin-left: 100px;
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #awardtitle {
   margin-top:-40px;
-  text-align: left;
-  margin-left: 100px;
+  text-align: center;
   position: relative;
   top:30px;
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .submitimage {
-  position: relative;
-  right:-700px !important;
-  top:-110px;
+  /*position: relative;*/
+  /*right:0px !important;*/
+  /*top:-110px;*/
+  /*border-radius: 30px;*/
+  /*border: 1px solid black;*/
+
+  position: relative;      /* Keep relative if needed for layout */
+  display: block;          /* Make it a block element */
+  margin: 0 auto;          /* Centers it horizontally */
+  top: -110px;             /* Keep your existing vertical shift */
   border-radius: 30px;
   border: 1px solid black;
+  max-width: 100%;         /* Ensures responsiveness */
+  height: auto;            /* Keeps aspect ratio */
+  right: 0 !important;     /* Ensure no horizontal shift */
+  left: 0;
+
+}
+
+.filmbuttonimage
+{
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  padding: 15px;
+  padding-bottom: 50px;
 }
 
 .rules li {
@@ -257,6 +287,9 @@ a:active {
   margin: 0 auto;
   position: relative;
   top:-90px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 15px;
 }
 
 .submitbutton {
@@ -286,7 +319,7 @@ a:active {
   width: 90%;
   max-width: 800px;
   margin: 1.5rem auto;
-  padding: 1rem 0;
+  padding: 3rem 0;
 }
 
 .aboutparagraph {
@@ -745,6 +778,14 @@ hr.new4 {
     max-width: 100%;
     height: auto;
   }
+  
+  .filmbutton {
+    position: relative !important;
+    display: block !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    left: 0 !important;
+  }
 
 
   .submitbutton:hover {
@@ -967,9 +1008,10 @@ hr.new4 {
 
   /* Footer styles */
   footer {
-    margin-top: 40px;
-    padding: 20px 10px;
+    margin-top: 20px;
+    padding: 10px 10px;
     width: 100%;
+    margin-bottom: 20px;
 
   }
 
