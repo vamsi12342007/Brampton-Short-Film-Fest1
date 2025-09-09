@@ -131,13 +131,13 @@
       nav.classList.toggle("expanded");
       console.log("Menu toggled");
     }
-    
+
     // Ensure the script runs after the page loads
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
       console.log("Page loaded");
       var hamburger = document.querySelector(".hamburger");
       if (hamburger) {
-        hamburger.addEventListener("click", function(e) {
+        hamburger.addEventListener("click", function (e) {
           e.preventDefault();
           toggleMenu();
         });
@@ -151,7 +151,7 @@
     <div class="Header1 mobileView">
       <div class="Header1-top">
         <img class="mainlogo" alt="" src="Images/Logo 3.2.png" width="200" height="100" />
-<!--        <p class="mainslogan">Brampton Short Film-Fest</p>-->
+        <!--        <p class="mainslogan">Brampton Short Film-Fest</p>-->
         <button class="hamburger">
           <i class="fas fa-bars"></i>
         </button>
@@ -166,38 +166,46 @@
       </nav>
     </div>
 
+
     <div class="homeimage">
       <img class="homeimage2" src="Images/Home image.png" alt="Colorful geometric design" />
     </div>
 
-        <div>
-          <p class="homepageinfo">Celebrating creativity, storytelling, and emerging talent from around the globe, the
+    <div>
+      <p class="homepageinfo">Celebrating creativity, storytelling, and emerging talent from around the globe, the
         Brampton Short Film Fest
         is your gateway to compelling short films across genres. Join us online for a dynamic showcase of independent
         cinema—where every frame tells a story and every voice matters.</p>
 
-        <p class="homepageinfo2">Submit your short film through FilmFreeway to be considered for this year’s festival.
+      <p class="homepageinfo2">Submit your short film through FilmFreeway to be considered for this year’s festival.
         For all the details, including submission guidelines and festival dates, don’t forget to check out our About Us
         page!</p>
     </div>
 
+    
+    <div class="promotionalvideo">
+      <iframe id="promotionalvideo" width="420" height="315" src="https://www.youtube.com/embed/l87DjKh2_x4"></iframe>
+      </iframe>
+    </div>
+
     <div class="homeinfo">
-         
+
     </div>
 
     <div class="homeimageinfo">
 
-      <a id="filmbutton" href="https://filmfreeway.com/festivals/74120?utm_campaign=Brampton+Short+Film-Fest&utm_medium=External&utm_source=Submission+Button"
-          target="_blank" title="Click to submit on FilmFreeway"><img class="filmbuttonimage"
-            src="https://public-assets.filmfreeway.com/submission_buttons/v2/med_submission_btn@2x-sky-gradient.png"
-            title="Click to submit on FilmFreeway" width="263" height="102"></a>
-<!--      <p>Welcome to official website of Brampton Short-film Festival</p>-->
-     <!-- <a href="https://filmfreeway.com" class="button">SUBMIT FILMS</a> -->
+      <a id="filmbutton"
+        href="https://filmfreeway.com/festivals/74120?utm_campaign=Brampton+Short+Film-Fest&utm_medium=External&utm_source=Submission+Button"
+        target="_blank" title="Click to submit on FilmFreeway"><img class="filmbuttonimage"
+          src="https://public-assets.filmfreeway.com/submission_buttons/v2/med_submission_btn@2x-sky-gradient.png"
+          title="Click to submit on FilmFreeway" width="263" height="102"></a>
+      <!--      <p>Welcome to official website of Brampton Short-film Festival</p>-->
+      <!-- <a href="https://filmfreeway.com" class="button">SUBMIT FILMS</a> -->
 
-  </div>
-<!--    <div class="Mainslogan">-->
-<!--    <p class="Mainslogan">Your Story Deserves a Spotlight—Let’s Stream It to the World</p>-->
-<!--    </div>-->
+    </div>
+    <!--    <div class="Mainslogan">-->
+    <!--    <p class="Mainslogan">Your Story Deserves a Spotlight—Let’s Stream It to the World</p>-->
+    <!--    </div>-->
 
     <footer class="footer">
       <div class="contactContainer">
@@ -218,7 +226,7 @@
         <!--            width="40"-->
         <!--            height="30"-->
         <!--          />-->
-        </div>
+      </div>
       <div class="contactContainer">
         <!--          <img-->
         <!--            class="footericons"-->
@@ -229,7 +237,9 @@
         <!--          />-->
         <p>bramptonshortfilm-fest.com</p>
       </div>
-      <i> <p>Short in Length, Long in Impact.</p> </i>
+      <i>
+        <p>Short in Length, Long in Impact.</p>
+      </i>
       <p>&copy; 2025 Brampton Film-Fest (Official Site)</p>
     </footer>
   </div>

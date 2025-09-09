@@ -28,7 +28,9 @@ body {
   display: none;
 }
 
-
+.promotionalvideo {
+  margin-left: 650px;
+}
 
 a:link {
   color:#FFD700 ;
