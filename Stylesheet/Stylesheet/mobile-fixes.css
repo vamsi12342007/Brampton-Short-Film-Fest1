@@ -1,0 +1,47 @@
+/* Mobile fixes for footer overflow */
+@media only screen and (max-width: 768px) {
+  .submitimage {
+    position: relative;
+    top: 0 !important;
+    right: 0 !important;
+  }
+
+  #homepageinfo2 {
+    position: relative;
+    top: 0 !important;
+  }
+
+  .submitparagraph2 {
+    position: relative;
+    top: 0 !important;
+  }
+
+  #submitslogan {
+    position: relative;
+    top: 0 !important;
+  }
+
+  /*.promotionalvideo {*/
+  /*  position: relative;*/
+  /*  right: 600px;*/
+  /*}*/
+
+  /*#promotionalvideo {*/
+  /*  width: 300px;*/
+  /*  height: 300px;*/
+  /*}*/
+
+
+  /* Add some spacing between elements */
+  .submitcontainer {
+    padding-bottom: 20px;
+  }
+
+  /* Ensure footer stays at the bottom */
+  footer.footer {
+    position: relative;
+    bottom: 0;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+}
