@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Brampton Short Film-Fest (official site)</title>
+  <meta charset="utf-8" />
+  <meta name="author" content="Vamsi Kurli" />
+  <meta name="description" content="VK Creatives (official website)" />
+  <meta name="keywords" content="HTML,CSS,Feature film, film festival" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="Stylesheet/stylesheet2.css" rel="stylesheet" type="text/css" />
+  <link href="Stylesheet/mobile-fixes.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster" />
+
+  <style>
+    @media only screen and (max-width: 768px) {
+      .Header1 {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        gap: 10px;
+      }
+
+      .mainslogan {
+        position: relative;
+        top: -20px;
+        font-size: 16px;
+      }
+
+      .Header1-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .hamburger {
+        display: block !important;
+        background: none;
+        border: 2px solid #FFD700;
+        border-radius: 5px;
+        font-size: 28px;
+        color: #FFD700;
+        cursor: pointer;
+        padding: 5px 10px;
+      }
+
+      .mobilenav {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        background-color: #ffd702;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 0px;
+      }
+
+      .mobilenav.expanded {
+        display: flex;
+      }
+
+      .programicons a {
+        font-size: 18px;
+        display: block;
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+      }
+
+      .homeimage2 {
+        width: 100%;
+        height: auto;
+      }
+
+      .homeimageinfo {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        padding: 20px;
+        position: relative;
+      }
+
+      .filmbutton {
+        position: relative;
+        left: 0;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+      }
+
+      .button {
+        padding: 20px 40px;
+        font-size: 24px;
+      }
+    }
+
+    .hamburger {
+      display: none;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .indexContainer,
+    .Header1,
+    .Header1-top,
+    .mobilenav,
+    .aboutcontainer,
+    .footer {
+      max-width: 100vw;
+      box-sizing: border-box;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .submitbutton {
+      position: static !important;
+      margin: 120px auto !important;
+      display: block !important;
+      text-align: center !important;
+      width: 80%;
+      max-width: 300px;
+
+    }
+
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td,
+    th {
+      border: 1px solid black;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: white;
+    }
+
+    h3 {
+      text-align: center;
+      color: black;
+      font-size: 30px;
+    }
+
+    .dramatable {
+      border: 3px solid black;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    .dramatable {
+      font-size: 20px;
+    }
+
+    .selectedfilmtitles {
+      color: black;
+    }
+  </style>
+
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById("mnav");
+      nav.classList.toggle("expanded");
+      console.log("Menu toggled");
+    }
+
+    // Ensure the script runs after the page loads
+    document.addEventListener("DOMContentLoaded", function () {
+      console.log("Page loaded");
+      var hamburger = document.querySelector(".hamburger");
+      if (hamburger) {
+        hamburger.addEventListener("click", function (e) {
+          e.preventDefault();
+          toggleMenu();
+        });
+      }
+    });
+  </script>
+</head>
+
+<body>
+  <div class="indexContainer">
+    <div class="Header1 mobileView">
+      <div class="Header1-top">
+        <img class="mainlogo" alt="" src="Images/Logo 3.2.png" width="200" height="100" />
+        <!--        <p class="mainslogan">Brampton Short Film-Fest</p>-->
+        <button class="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+
+      <nav id="mnav" class="Header1 Nav mobilenav">
+        <div class="programicons"><a href="index.html">Home</a></div>
+        <div class="programicons"><a href="Film Collection.html">Film Collection</a></div>
+        <div class="programicons"><a href="Selected films.html">2025 Official Selection</a></div>
+        <div class="programicons"><a href="About.html">About Us</a></div>
+        <div class="programicons"><a href="Submit.html">Submit</a></div>
+        <div class="programicons"><a href="Contact.html">Contact Us</a></div>
+      </nav>
+    </div>
+
+</html>
+
+
+<h2 class="dramatable">The Brampton Short Film Festival’s 2025–2026 Selected Films.</h2>
+<hr>
+<div class="genres-grid">
+  <a href="Selected films.html#drama"><button type="button">Drama</button></a>
+  <a href="Selected films.html#comedyfilms"><button type="button">Comedy</button></a>
+  <a href="Selected films.html#animationfilms"><button type="button">Animation</button></a>
+  <a href="Selected films.html#studentfilms"><button type="button">Student</button></a>
+  <a href="Selected films.html#horrorfilms"><button type="button">Horror</button></a>
+  <a href="Selected films.html"><button type="button">Action</button></a>
+  <a href="Selected films.html#foreignfilms"><button type="button">Foreign</button></a>
+  <a href="Selected films.html#romancefilms"><button type="button">Romance</button></a>
+  <a href="Selected films.html#documentaryfilms"><button type="button">Documentary</button></a>
+  <a href="Selected films.html#fantasyfilms"><button type="button">Fantasy</button></a>
+</div>
+
+<div>
+  <hr>
+  <h3 id="drama">Drama</h3>
+  <table>
+    <tr>
+      <th>Film Title</th>
+      <th>Director</th>
+      <th>Runtime</th>
+      <th>Country</th>
+    </tr>
+
+    <tr>
+      <td><a class="selectedfilmtitles" href="What a Beautiful Day.html">What a Beautiful Day</a></td>
+      <td>Cherise Keown</td>
+      <td>10:00</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="One Click.html">One Click</a></td>
+      <td>Dallas Soonias</td>
+      <td>10:36</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="The Flower at the end of the world.html">The Flower at the end of the
+          world</a></td>
+      <td>Dipen Maharjan</td>
+      <td>20:43</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Junkies.html">Junkie</a></td>
+      <td>Siobhon kayley</td>
+      <td>19:46</td>
+      <td>UK</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="The Road out.html">The Road Out</a></td>
+      <td>Michael Heaton</td>
+      <td>15:00</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Ms Mary.html">Ms.Mary</a></td>
+      <td>Jacqueline Lamb</td>
+      <td>9:34</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Annoying Sounds.html">Annoying Sounds</a></td>
+      <td>Daniel Moscovici</td>
+      <td>11:32</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="La Vida.html">La Vida</a></td>
+      <td>Mauricio Alarcon</td>
+      <td>13:00</td>
+      <td>United States</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="See you soon.html">See You Soon</a></td>
+      <td>Ted Hogeman</td>
+      <td>4:48</td>
+      <td>United States</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="IF CONSEQUENCE BUT DO APPROVE MY DREAM.html">IF CONSEQUENCE BUT DO APPROVE
+          MY DREAM...</a></td>
+      <td>Leon Cole</td>
+      <td>6:45</td>
+      <td>UK</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Before They Forget.html">Before they forget</a></td>
+      <td>Yoshi Tannamuri</td>
+      <td>4:48</td>
+      <td>United States</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="The Taste of Greed.html">The Taste of greed</a></td>
+      <td>Senthooran Ramanathan</td>
+      <td>17:19</td>
+      <td>Canada</td>
+    </tr>
+  </table>
+</div>
+
+<div class="dramatable">
+  <h3 id="foreignfilms">Foreign Films</h3>
+  <table>
+    <tr>
+      <th>Film Title</th>
+      <th>Director</th>
+      <th>Runtime</th>
+      <td>Country</td>
+    </tr>
+
+    <hr>
+
+    <tr>
+      <td><a class="selectedfilmtitles" href="Ghumauro.html">Ghumauro</a></td>
+      <td>Bhargaw Raj Thapaliya</td>
+      <td>14:33</td>
+      <td>Nepal</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Alakananda tu, main bhagirathi.html">Alakananda tu, main bhagirathi</a>
+      </td>
+      <td>Shubham Semwal</td>
+      <td>14:21</td>
+      <td>India</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="The Last Note.html">The Last Note</a></td>
+      <td>M Sasi Kumar</td>
+      <td>10:27</td>
+      <td>Malaysia</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="To All My Women.html">To All My Women</a></td>
+      <td>Pan Gangowski</td>
+      <td>11:00</td>
+      <td>Poland</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Rope of Hope.html">Rope of Hope</a></td>
+      <td>Pukar Bhandar</td>
+      <td>14:18</td>
+      <td>Nepal</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Biryanee.html">Biryanee</a></td>
+      <td>Prafulla Kharkar</td>
+      <td>19:38</td>
+      <td>United States</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Kuzolunga.html">Kuzolunga</a></td>
+      <td>Teresa Garza</td>
+      <td>8:08</td>
+      <td>United States</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Before They Forget.html">Before They Forget</a></td>
+      <td>Thuso Jovislash Mogotsi</td>
+      <td>17:59</td>
+      <td>South Africa</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Fever.html">Fever</a></td>
+      <td>HungYu Wang</td>
+      <td>23:44</td>
+      <td>Taiwan</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Lost in Concrete Woods.html">Lost in Concrete Woods</a></td>
+      <td>Pruthvi Teja Anumandla</td>
+      <td>20:00</td>
+      <td>Taiwan</td>
+    </tr>
+  </table>
+</div>
+
+<div class="dramatable">
+  <h3 id="fantasyfilms">Fantasy</h3>
+  <table>
+    <tr>
+      <th>Film Title</th>
+      <th>Director</th>
+      <th>Runtime</th>
+      <td>Country</td>
+    </tr>
+    <hr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Jackson Black.html">Jackson Black</a></td>
+      <td>Simon Geoffrey Craig</td>
+      <td>6:17</td>
+      <td>UK</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Parsing Parallel Paths.html">Parsing Parallel Paths</a></td>
+      <td>Ellie May Gilmer</td>
+      <td>10:23</td>
+      <td>Canada</td>
+    </tr>
+  </table>
+</div>
+
+<div class="dramatable">
+  <h3 id="horrorfilms">Horror</h3>
+  <table>
+    <tr>
+      <th>Film Title</th>
+      <th>Director</th>
+      <th>Runtime</th>
+      <th>Country</th>
+    </tr>
+    <hr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Lost in Concrete Wood.html">Resurrection</a></td>
+      <td>Peter Kominek</td>
+      <td>14:03</td>
+      <td>UK</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Dark Brandon.html">Dark Brandon</a></td>
+      <td>Mitchell Frankowski</td>
+      <td>11:52</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Refuge.html">Refuge</a></td>
+      <td>John Seymour</td>
+      <td>6:26</td>
+      <td>UK</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Garage Sale Massasre.html">Garage Sale Massasre</a></td>
+      <td>Warren Dean Fulton</td>
+      <td>10:00</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Urn.html">Urn</a></td>
+      <td>Ian Tan</td>
+      <td>4:45</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Inheritance.html">Inheritance</a></td>
+      <td>Denis Curej</td>
+      <td>10:00</td>
+      <td>UK</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="The Clone.html">The Clone</a></td>
+      <td>Matt R czaszewicz</td>
+      <td>9:54</td>
+      <td>USA</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Lost in Concrete Woods.html">Incident at Fox House</a></td>
+      <td>Tom Roe</td>
+      <td>21:09</td>
+      <td>UK</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Karak.html">Karak</a></td>
+      <td>Ian Tan</td>
+      <td>11:23</td>
+      <td>Canada</td>
+    </tr>
+  </table>
+</div>
+
+<div class="dramatable">
+  <h3 id="animationfilms">Animation</h3>
+  <table>
+    <tr>
+      <th>Film Title</th>
+      <th>Director</th>
+      <th>Runtime</th>
+      <th>Country</th>
+    </tr>
+    <hr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="eXperiment 1.html">eXperiment 1</a></td>
+      <td>Kurtz Frausun</td>
+      <td>1:00</td>
+      <td>USA</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="The Three Scrawny Wolves.html">The Three Scrawny Wolves</a></td>
+      <td>Liam Shay Ryan</td>
+      <td>3:19</td>
+      <th>Australia</th>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Those McPhuqurs.html">Those McPhuqurs</a></td>
+      <td>Anieph Latchman</td>
+      <td>3:00</td>
+      <td>USA</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Artblocked.html">Artblocked</a></td>
+      <td>Abigail Hogewood</td>
+      <td>5:56</td>
+      <td>USA</td>
+    </tr>
+  </table>
+</div>
+
+<div class="dramatable">
+  <h3 id="comedyfilms">Comedy</h3>
+  <table>
+    <tr>
+      <th>Film Title</th>
+      <th>Director</th>
+      <th>Runtime</th>
+      <th>Country</th>
+    </tr>
+    <hr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="The Parklands.html">The Parklands</a></td>
+      <td>CJ Byrd-Vassell, Akini Davidson</td>
+      <td>14:12</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Facebook Vacation.html">Facebook Vacation</a></td>
+      <td>Tyler Hodkinson</td>
+      <td>4:31</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Sticky Business.html">Sticky Business</a></td>
+      <td>Erin Walker</td>
+      <td>7:32</td>
+      <td>UK</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Booked.html">Booked</a></td>
+      <td>Tyson Green</td>
+      <td>14:29</td>
+      <td>UK</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Artblocked.html">Artblocked</a></td>
+      <td>Abigail Hogewood</td>
+      <td>5:56</td>
+      <td>USA</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Reunited in Yokohama.html">Reunion in Yohohama</a></td>
+      <td>Heidi Van Horne</td>
+      <td>2:59</td>
+      <td>USA</td>
+    </tr>
+  </table>
+</div>
+
+
+<div class="dramatable">
+  <h3 id="studentfilms">Student Films</h3>
+  <table>
+    <tr>
+      <th>Film Title</th>
+      <th>Director</th>
+      <th>Runtime</th>
+      <th>Country</th>
+    </tr>
+    <hr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Reunited in Yokohama.html">Perfect Show</a></td>
+      <td>Sophie Drago & Lucas Miller</td>
+      <td>3:50</td>
+      <td>USA</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Hello Wish You Well Goodbye.html">Hello,Wish You Well,Goodbye</a></td>
+      <td>Tommy Ngo</td>
+      <td>4:44</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="What We Become.html">What we Have Become</a></td>
+      <td>Lauren Donatoni</td>
+      <td>15:21</td>
+      <td>USA</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Photosniper.html">Photosniper</a></td>
+      <td>Kaelin McInnis</td>
+      <td>5:29</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Tea Time.html">Tea Time</a></td>
+      <td>Ellie May Gilmer</td>
+      <td>2:17</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Inspiration in White.html">Inspiration in White</a></td>
+      <td>David Jordao</td>
+      <td>9:50</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Where the water meets the sand.html">Where Water Meets The Sand</a></td>
+      <td>Josiah Erwin</td>
+      <td>11:07</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Cuddle Buddies.html">Cuddle Buddies</a></td>
+      <td>Mira Gunwant del Prado</td>
+      <td>12:00</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Something Called Sonder.html">Something called Sonder</a></td>
+      <td>Laura Winckles</td>
+      <td>2:54</td>
+      <td>UK</td>
+    </tr>
+  </table>
+</div>
+
+<div class="dramatable">
+  <h3 id="romancefilms">Romance</h3>
+  <table>
+    <tr>
+      <th>Film Title</th>
+      <th>Director</th>
+      <th>Runtime</th>
+      <th>Country</th>
+    </tr>
+    <hr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Cuddle Buddies.html">Cuddle Buddies</a></td>
+      <td>Mira Gunwant del Prado</td>
+      <td>12:00</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="The Taste of Greed.html">The Taste of greed</a></td>
+      <td>Senthooran Ramanathan</td>
+      <td>17:19</td>
+      <td>Canada</td>
+    </tr>
+  </table>
+</div>
+
+<div class="dramatable">
+  <h3 id="documentaryfilms">Documentary</h3>
+  <table>
+    <tr>
+      <th>Film Title</th>
+      <th>Director</th>
+      <th>Runtime</th>
+      <th>Country</th>
+    </tr>
+
+    <tr>
+      <td><a class="selectedfilmtitles" href="Arms Spread Out.html">Arms Spread Out</a></td>
+      <td>Mira Gunwant del Prado</td>
+      <td>12:00</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="F.html">F</a></td>
+      <td>Senthooran Ramanathan</td>
+      <td>17:19</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="The Ramp to Nowhere.html">The Ramp to Nowhere</a></td>
+      <td>Emma Davenport</td>
+      <td>8:16</td>
+      <td>USA</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Revival.html">Revival</a></td>
+      <td>Gvantsa Jishkariani</td>
+      <td>5:00</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Numb.html">#Numb</a></td>
+      <td>Dean Wayne Evans</td>
+      <td>3:32</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="It's OK to Talk.html">It's OK to Talk</a></td>
+      <td>Adam Smith</td>
+      <td>7:00</td>
+      <td>UK</td>
+    </tr>
+    <tr>
+      <td><a class="selectedfilmtitles" href="Truth About Brampton.html">Truth About Brampton</a></td>
+      <td>Mira Gunwant del Prado</td>
+      <td>7:33</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+  </table>
+</div>
+
+</body>
+
+<!--    <div class="Mainslogan">-->
+<!--    <p class="Mainslogan">Your Story Deserves a Spotlight—Let’s Stream It to the World</p>-->
+<!--    </div>-->
+
+<footer class="footer">
+  <div class="contactContainer">
+    <!--          <img-->
+    <!--            class="footericons"-->
+    <!--            src="Images/Nav Icons/Email Icon.png"-->
+    <!--            alt="email icon"-->
+    <!--            width="40"-->
+    <!--            height="30"-->
+    <!--          />-->
+    <p>bramptonshortfilmfest@gmail.com</p>
+  </div>
+  <div class="contactContainer">
+    <!--          <img-->
+    <!--            class="footericons"-->
+    <!--            src="Images/Nav Icons/telephone_1104586.png"-->
+    <!--            alt="telephone icon"-->
+    <!--            width="40"-->
+    <!--            height="30"-->
+    <!--          />-->
+  </div>
+  <div class="contactContainer">
+    <!--          <img-->
+    <!--            class="footericons"-->
+    <!--            src="Images/Nav Icons/world-wide-web.png"-->
+    <!--            alt="web icon"-->
+    <!--            width="40"-->
+    <!--            height="30"-->
+    <!--          />-->
+    <p>bramptonshortfilm-fest.com</p>
+  </div>
+  <i>
+    <p>Short in Length, Long in Impact.</p>
+  </i>
+  <p>&copy; 2025 Brampton Film-Fest (Official Site)</p>
+</footer>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Brampton Short Film-Fest (official site)</title>
+  <meta charset="utf-8" />
+  <meta name="author" content="Vamsi Kurli" />
+  <meta name="description" content="VK Creatives (official website)" />
+  <meta name="keywords" content="HTML,CSS,Feature film, film festival" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="Stylesheet/stylesheet2.css" rel="stylesheet" type="text/css" />
+  <link href="Stylesheet/mobile-fixes.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster" />
+  <script src="database.js"></script>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
+    import { getFirestore, doc, getDocs, setDoc, updateDoc } from 'https://www.gstatic.com/firebasejs/12.4.0/firebase-firestore.js';
+    app = initializeApp(firebaseConfig);
+    db = getFirestore(app);
+    setUpFns("drama", getDocs, doc, updateDoc, setDoc, false);
+  </script>
+  <script src="addcomment.js" type="text/javascript"></script>
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById("mnav");
+      nav.classList.toggle("expanded");
+      console.log("Menu toggled");
+    }
+
+    // Ensure the script runs after the page loads
+    document.addEventListener("DOMContentLoaded", function () {
+      console.log("Page loaded");
+      var hamburger = document.querySelector(".hamburger");
+      if (hamburger) {
+        hamburger.addEventListener("click", function (e) {
+          e.preventDefault();
+          toggleMenu();
+        });
+      }
+      getCommentsAndLikes();
+    });
+  </script>
+</head>
+
+<body>
+  <div class="indexContainer">
+    <div class="Header1 mobileView">
+      <div class="Header1-top">
+        <img class="mainlogo" alt="" src="Images/Logo 3.2.png" width="200" height="100" />
+        <!--        <p class="mainslogan">Brampton Short Film-Fest</p>-->
+        <button class="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+
+      <nav id="mnav" class="Header1 Nav mobilenav">
+        <div class="programicons"><a href="index.html">Home</a></div>
+        <div class="programicons"><a href="Film Collection.html">Film Collection</a></div>
+        <div class="programicons"><a href="Selected films.html">2025 Official Selection</a></div>
+        <div class="programicons"><a href="About.html">About Us</a></div>
+        <div class="programicons"><a href="Submit.html">Submit</a></div>
+        <div class="programicons"><a href="Contact.html">Contact Us</a></div>
+      </nav>
+    </div>
+
+    <div>
+      <p class="filmtitles">One Click</p>
+    </div>
+
+    <div class="pagecontainer">
+      <div class="postercontainer">
+        <div>
+          <img class="movieposters" src="Images/Film Poster/Drama/One Click.png" width="400" height="900">
+        </div>
+
+        <div class="countrycontainer">
+          <p class="countrytitle">Country</p>
+          <p class="countryname"><span style="color:red">Canada</span></p>
+
+          <p class="countrytitle">Category</p>
+          <p class="countryname"><span style="color:red">Drama/Action</span></p>
+
+          <p class="countrytitle">Release Year</p>
+          <p class="countryname"><span style="color:red">2024</span></p>
+
+          <p class="countrytitle">Director</p>
+          <p class="countryname"><span style="color:red">Dallas Soonias</span></p>
+
+          <p class="countrytitle">Run-time</p>
+          <p class="countryname"><span style="color:red">10:36 mins</span></p>
+        </div>
+
+        <div class="creditscontainer">
+          <p class="countrytitle">Writers</p>
+          <p class="countryname"><span style="color:red">Dean Laverick</span></p>
+
+          <p class="countrytitle">Producers</p>
+          <p class="countryname"><span style="color:red">Dean Laverick</span></p>
+
+          <p class="countrytitle">Editor</p>
+          <p class="countryname"><span style="color:red">Austin Dalke</span></p>
+
+          <p class="countrytitle">Music</p>
+          <p class="countryname"><span style="color:red">Ryan Northcott</span></p>
+
+          <p class="countrytitle">Cinematography</p>
+          <p class="countryname"><span style="color:red">Noah Fallis</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="synopsiscontainer">
+      <h4 class="synopsisheader">Synopsis</h4>
+      <p id="whatsynopsis">Bart and his group of outlaws are looking for one last score before leaving the territory.
+        They have decided to hide just outside of town in a beautiful home while Bart sends one of his boys into town to
+        grab the bank manager. Bart is enjoying a cigar and a drink in the home of the bank manager when Charlie comes
+        back with the bank teller. Not the first time Charlie has messed up. All the other boys are upset with Charlie,
+        again for messing up. Charlie decides to get him to talk by beating him up, hoping he will give up the
+        information about the town’s bank that they are all looking for. As Bart is informed that Charlie is back by his
+        right hand, Leroy, Bart stares at a picture of a past love he should never have left.
+        As Bart leaves the home, he stops and yells at Charlie. He proceeds to apologize to the teller for the way he
+        was treated but insists there was meaning behind it. They need to know where the key is to the safe in town so
+        they can leave town with one last big score. They have the law just two days behind them and they are in a
+        hurry. As the bank teller Tom, is questioned by Bart and asked if he is married and has children, Tom decides he
+        isn’t dying for anyone. He gives up the key to the safe. It’s around his next and Bart and his boys think they
+        have scored?
+        Bart sends Charlie back into the house to check on the bank manager to see if he is still alive. As Charlie
+        starts for the house, Tom informs Bart of a new safe that was just delivered and it needs a key and a
+        combination to open it.
+        Bart stops and yells at Charlie to keep the bank manager alive but as Charlie reaches the door, he hears Bart
+        yell at him but as he opens the door, Charlie hears a familiar click of a shotgun. Charlie turns for cover
+        against the building and two shotgun blasts just miss him. Charlie rushes in with his gun drawn and fires at the
+        bank manager, killing on the floor of the house.
+        Charlie proudly comes out, trying to get back on Bart’s good side. Bart yells at him that they needed the bank
+        manager alive. Charlie pleads his case about being shot at.
+        Bart has had enough. With an all to familiar look at Leroy, as Charlie turns to walk away, Leroy guns him down
+        as he walk. Charlie falls dead to the ground.
+        Leroy reminds Bart about Tom, still sitting there, tied up, sitting on a fallen tree. Bart decides he has seen
+        too much and is no longer valuable and shoots him dead as well.
+        Bart and his boys mount up and head into the town to see if the key fits and they can track down that
+        combination somewhere for one last big score.</p>
+    </div>
+
+    <div class="promotionalvideo">
+      <iframe id="SIBIMLfilm" width="420" height="315"
+        src="https://player.vimeo.com/video/1049145659?h=d853cc6e63"></iframe>
+      </iframe>
+    </div>
+    <div class="commentsareawrapper">
+      <div class="likesFeatureWrapper">
+        <i onclick="handlelikebutton(event)" id="drama2" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+        <span style="float: right;" id="iddrama2likes">0 likes</span>
+      </div>
+      <comment-component class="addCommentsForm" id="drama2comment"></comment-component>
+      <div class="commentsSection">
+        <h4 class="marginlessP"><span onclick="toggleComments()" class="commentsExpander">Show Comments</span></h4>
+        <div id="commentsContainer" style="display: none;"></div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="contactContainer">
+        <!--          <img-->
+        <!--            class="footericons"-->
+        <!--            src="Images/Nav Icons/Email Icon.png"-->
+        <!--            alt="email icon"-->
+        <!--            width="40"-->
+        <!--            height="30"-->
+        <!--          />-->
+        <p>bramptonshortfilmfest@gmail.com</p>
+      </div>
+      <div class="contactContainer">
+        <!--          <img-->
+        <!--            class="footericons"-->
+        <!--            src="Images/Nav Icons/telephone_1104586.png"-->
+        <!--            alt="telephone icon"-->
+        <!--            width="40"-->
+        <!--            height="30"-->
+        <!--          />-->
+      </div>
+      <div class="contactContainer">
+        <!--          <img-->
+        <!--            class="footericons"-->
+        <!--            src="Images/Nav Icons/world-wide-web.png"-->
+        <!--            alt="web icon"-->
+        <!--            width="40"-->
+        <!--            height="30"-->
+        <!--          />-->
+        <p>bramptonshortfilm-fest.com</p>
+      </div>
+      <i>
+        <p>Short in Length, Long in Impact.</p>
+      </i>
+      <p>&copy; 2025 Brampton Film-Fest (Official Site)</p>
+    </footer>
+  </div>
+</body>

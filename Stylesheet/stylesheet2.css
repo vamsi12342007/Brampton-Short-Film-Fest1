@@ -1,9 +1,9 @@
 body {
-  background-color:#FFD700;
+  background-color: #FFD700;
   font-family: "Merriweather", serif;
   font-size: 16px;
   line-height: 1.6;
-  color:black;
+  color: black;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -11,7 +11,9 @@ body {
 
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -24,27 +26,232 @@ body {
   text-align: center;
 }
 
+
+.filmselection {
+  border: 3px solid black;
+}
+
+.comments {
+  text-align: center;
+  font-size: 30px;
+  color:black;
+}
+
+.commentstitle {
+  margin: 100px;
+}
+.commentscontainer {
+  border: 3px solid black;
+  color:#FFD700;
+  width:800px;
+  height:700px;
+  position: relative;
+  left:400px;
+}
+
+.ratingicons {
+  position: relative;
+  left:1100px;
+  top:-200px;
+}
+
+#thumpsdown {
+  position: relative;
+  right:-100px;
+  top:-80px;
+}
+
+#filmcollectionslogan {
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+  bottom: -60px;
+}
+
+
+.promotionalvideo {
+
+  position: relative;
+  width: 80%; /* 80% of window width */
+  margin: 0 auto; /* center horizontally */
+  padding-top: 45%; /* controls aspect ratio, 16:9 ≈ 56.25%, adjust as needed */
+  overflow: hidden;
+  border-radius: 12px; /* optional */
+
+}
+
+.promotionalvideo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* fills parent width */
+  height: 100%; /* fills parent height */
+  border: none;
+  display: block;
+  padding-bottom: 60px;
+}
+
+
+.filmcollectionimage {
+  width: 100%;
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.genres-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.genres-grid a button {
+  width: 220px;           /* fixed width */
+  height: 80px;           /* fixed height */
+  background-color: #000;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  font-size: 28px;        /* adjust for balance */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  display: flex;          /* center text */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  white-space: nowrap;    /* keep text on one line */
+}
+
+.genres-grid a button:hover {
+  background-color: #FFD700;
+  color: #000;
+  transform: scale(1.05);
+  border-color: black;
+
+}
+
+
+.pagecontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  border: 3px solid black;
+}
+
+.synopsis {
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  top: -80px;
+}
+
+#whatsynopsis {
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  top: -80px;
+}
+
+.filmtitles {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 10px;
+  border: 3px solid black;
+  color:#FFD700;
+  background-color: black;
+}
+
+.movieposters {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.countryname {
+  margin-top: -30px;
+  font-size: 20px;
+}
+
+.postercontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-content: space-evenly;
+}
+
+h4 {
+  margin-top: 60px;
+}
+
+.synopsisheader {
+  margin: 100px;
+}
+
+#wolvesmovieposters {
+  position: relative;
+  top: 300px;
+  right: -100px;
+}
+
+.synopsiscontainer {
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 15px;
+  line-height: 1.6;
+  
+}
+
+
+
+.creditscontainer {
+  margin-left: 100px;
+
+}
+
+.countrytitle {
+  font-size: 25px;
+}
+
 .hidden {
   display: none;
 }
 
-.promotionalvideo {
-  margin-left: 650px;
-}
 
 a:link {
-  color:#FFD700 ;
+  color: black;
   text-decoration: none;
 }
 
 a:visited {
-  color:#FFD700 ;
+  color: black;
 }
 
 a:hover {
-  color: #ffffff;
+  color: greenyellow;
   text-decoration: none;
 }
+
+#wolvessynopsiscontainer {
+  position: relative;
+  top: 50px;
+}
+
+#creditscontainer {
+  position: relative;
+  right: -300px;
+  top: 130px;
+}
+
 
 a:active {
   color: blue;
@@ -62,6 +269,7 @@ a:active {
   height: auto;
   max-height: 200px;
 }
+
 .rules {
   position: relative;
   top: 10px;
@@ -83,10 +291,10 @@ a:active {
 }
 
 #awardtitle {
-  margin-top:-40px;
+  margin-top: -40px;
   text-align: center;
   position: relative;
-  top:30px;
+  top: 30px;
   width: 90%;
   max-width: 800px;
   margin-left: auto;
@@ -100,21 +308,27 @@ a:active {
   /*border-radius: 30px;*/
   /*border: 1px solid black;*/
 
-  position: relative;      /* Keep relative if needed for layout */
-  display: block;          /* Make it a block element */
-  margin: 0 auto;          /* Centers it horizontally */
-  top: -110px;             /* Keep your existing vertical shift */
+  position: relative;
+  /* Keep relative if needed for layout */
+  display: block;
+  /* Make it a block element */
+  margin: 0 auto;
+  /* Centers it horizontally */
+  top: -110px;
+  /* Keep your existing vertical shift */
   border-radius: 30px;
   border: 1px solid black;
-  max-width: 100%;         /* Ensures responsiveness */
-  height: auto;            /* Keeps aspect ratio */
-  right: 0 !important;     /* Ensure no horizontal shift */
+  max-width: 100%;
+  /* Ensures responsiveness */
+  height: auto;
+  /* Keeps aspect ratio */
+  right: 0 !important;
+  /* Ensure no horizontal shift */
   left: 0;
 
 }
 
-.filmbuttonimage
-{
+.filmbuttonimage {
   display: block;
   margin: 0 auto;
   max-width: 100%;
@@ -135,7 +349,7 @@ a:active {
   font-size: 30px;
   font-weight: bold;
   position: relative;
-  top:-60px;
+  top: -60px;
 }
 
 .Mainslogan {
@@ -186,12 +400,12 @@ a:active {
   left: 0;
   right: 0;
   margin: 0 auto;
-  color:black;
+  color: black;
   align-content: center;
 }
 
 .homepageslogan {
-  color:black;
+  color: black;
 }
 
 .founderinfo3 {
@@ -199,22 +413,250 @@ a:active {
   font-size: 15px;
 }
 
-  .submitbutton {
-    background-color: black;
-    border: 3px solid black;
-    color: #FFD700;
-    padding: 20px 20px;
-    text-align: center;
-    cursor: pointer;
-    font-size: 20px;
-    font-family: "Merriweather", serif;
-    font-weight: bold;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s, transform 0.2s;
-  }
+.submitbutton {
+  background-color: black;
+  border: 3px solid black;
+  color: #FFD700;
+  padding: 20px 20px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
 
+.filmbuttons {
+  background-color: black;
+  border: 3px solid black;
+  color: #FFD700;
+  padding: 40px 40px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  border-radius: 100%;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
 
+#dramafilmbuttons {
+  background-color: black;
+  border: 3px solid black;
+  color: #FFD700;
+  padding: 40px 40px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  border-radius: 100%;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+#dramafilmbuttons:hover {
+  background-color: #59000A;
+  color: #FFD700;
+  transform: scale(1.05);
+}
+
+#comedyfilmbutton {
+  background-color: black;
+  border: 3px solid black;
+  color: #FFD700;
+  padding: 40px 40px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  border-radius: 100%;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+#comedyfilmbutton:hover {
+  background-color: #a8dcab;
+  color: #FFD700;
+  transform: scale(1.05);
+}
+
+#horrorfilmbutton {
+  background-color: black;
+  border: 3px solid black;
+  color: #FFD700;
+  padding: 40px 40px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  border-radius: 100%;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+#horrorfilmbutton:hover {
+  background-color: #980002;
+  color: #FFD700;
+  transform: scale(1.05);
+}
+
+#animationfilmbutton {
+  background-color: black;
+  border: 3px solid black;
+  color: #FFD700;
+  padding: 40px 40px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  border-radius: 100%;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+#animationfilmbutton:hover {
+  background-color: #02CCFE;
+  color: #FFD700;
+  transform: scale(1.05);
+}
+
+.filmbuttons:hover {
+  background-color: #59000A;
+  color: #FFD700;
+  transform: scale(1.05);
+}
+
+#actionfilmbutton {
+  background-color: black;
+  border: 3px solid black;
+  color: #FFD700;
+  padding: 40px 40px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  border-radius: 100%;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+#actionfilmbutton:hover {
+  background-color: #BCC6CC;
+  color: #FFD700;
+  transform: scale(1.05);
+}
+
+#foreignfilmbutton {
+   background-color: black;
+  border: 3px solid black;
+  color: #FFD700;
+  padding: 40px 40px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  border-radius: 100%;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+#foreignfilmbutton:hover {
+  background-color: #305CDE;
+  color: #FFD700;
+  transform: scale(1.05);
+}
+
+#romancefilmbutton {
+     background-color: black;
+  border: 3px solid black;
+  color: #FFD700;
+  padding: 40px 40px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  border-radius: 100%;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+#romancefilmbutton:hover {
+  background-color: #F7879A;
+  color: #FFD700;
+  transform: scale(1.05);
+}
+
+#studentfilmbutton{
+     background-color: black;
+  border: 3px solid black;
+  color: #FFD700;
+  padding: 40px 40px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  border-radius: 100%;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+#studentfilmbutton:hover {
+ background-color: #66FF00;
+  color: #FFD700;
+  transform: scale(1.05);
+}
+
+.filmposters {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #FFD700;
+}
+.filmposters:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3);
+}
+
+.filmpostercontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: start;
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.genresheadlines {
+  font-size: 30px;
+  text-align: center;
+  border: 3px solid black;
+  background-color: black;
+  color: #FFD700;
+}
+
+.collectionhead{
+  font-size: 30px;
+  text-align: center;
+  border: 3px solid black;
+  background-color: black;
+  color: #FFD700;
+  width: 100%;
+}
 
 .submitbutton:hover {
   background-color: #FFD700;
@@ -247,7 +689,7 @@ a:active {
 }
 
 #homeslogan {
-  color:#FFD700;
+  color: #FFD700;
 }
 
 #Button {
@@ -274,7 +716,7 @@ a:active {
 .ContactForm {
   color: black;
   position: relative;
-  top:-110px;
+  top: -110px;
   /*border: 3px solid black;*/
   text-align: center;
   padding: 1.5rem;
@@ -283,12 +725,13 @@ a:active {
   max-width: 800px;
   border-radius: 10px;
 }
+
 .submitparagraph2 {
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
   position: relative;
-  top:-90px;
+  top: -90px;
   width: 100%;
   box-sizing: border-box;
   padding: 0 15px;
@@ -317,7 +760,7 @@ a:active {
   color: Black;
   font-size: 1rem;
   position: relative;
-  top:-90px;
+  top: -90px;
   width: 90%;
   max-width: 800px;
   margin: 1.5rem auto;
@@ -335,7 +778,7 @@ a:active {
 }
 
 #aboutparagraph {
-   color: black;
+  color: black;
   font-size: 20px;
   position: relative;
   text-align: left;
@@ -346,7 +789,7 @@ a:active {
 }
 
 #awardtext {
-   color: black;
+  color: black;
   font-size: 20px;
   position: relative;
   text-align: left;
@@ -370,7 +813,8 @@ a:active {
   margin: 1.5rem auto;
   padding: 1rem 0;
   display: flex;
-  justify-content: center; /* centers horizontally */
+  justify-content: center;
+  /* centers horizontally */
   align-items: center;
 }
 
@@ -399,7 +843,7 @@ a:active {
   border: 3px solid white;
   color: black;
   font-size: 30px;
-  background-color:#FFD700 ;
+  background-color: #FFD700;
   position: relative;
   top: 30px;
   border-radius: 30px;
@@ -411,7 +855,7 @@ a:active {
   justify-content: flex-end;
   align-items: center;
   background-color: BLACK;
-  color:#FFD700;
+  color: #FFD700;
   margin: 0;
   margin-top: 0;
   margin-bottom: 20px;
@@ -442,7 +886,7 @@ a:active {
 
 
 .homepageinfo {
-  color:black;
+  color: black;
   margin-top: 100px;
   width: 90%;
   max-width: 800px;
@@ -450,10 +894,10 @@ a:active {
   margin-right: auto;
   position: relative;
   left: 0;
-  }
+}
 
 .homepageinfo2 {
-  color:black;
+  color: black;
   margin-top: 20px;
   width: 90%;
   max-width: 800px;
@@ -464,7 +908,7 @@ a:active {
 }
 
 #homepageinfo2 {
-   color:black;
+  color: black;
   margin-top: 20px;
   width: 90%;
   max-width: 800px;
@@ -472,7 +916,7 @@ a:active {
   margin-right: auto;
   position: relative;
   left: 0;
-  top:-100px;
+  top: -100px;
 }
 
 .homeinfo {
@@ -500,7 +944,10 @@ a:active {
   margin-bottom: 5px;
 }
 
-#firstnametext, #lastnametext, #emailtext, #phonenumbertext {
+#firstnametext,
+#lastnametext,
+#emailtext,
+#phonenumbertext {
   margin-top: 0.5rem;
   padding: 0.75rem;
   width: 90%;
@@ -513,7 +960,7 @@ a:active {
 footer {
   text-align: center;
   background-color: black;
-  color:#FFD700;
+  color: #FFD700;
   /*border: 2px solid white;*/
   margin-top: 1rem;
   padding: 1.5rem 1rem;
@@ -582,7 +1029,8 @@ h3 {
 
 .rulescontainer {
   position: relative;
-  top: -60px;;
+  top: -60px;
+  ;
 }
 
 .homeimage2 {
@@ -645,6 +1093,7 @@ h2 {
   margin: 0 auto;
   background-color: white;
 }
+
 
 h4 {
   font-size: 1.5rem;
@@ -747,11 +1196,13 @@ hr.new4 {
 
 .programicons {
   padding-right: 60px;
-  margin-right: 60px; /* Change this value to adjust the gap between navigation items */
+  margin-right: 60px;
+  /* Change this value to adjust the gap between navigation items */
 }
 
 .mainlogo {
-  margin-left: 20px; /* Added margin to move logo to the right */
+  margin-left: 20px;
+  /* Added margin to move logo to the right */
 }
 
 .programicons a {
@@ -771,6 +1222,7 @@ hr.new4 {
 
 /* Responsive styles for mobile devices */
 @media only screen and (max-width: 768px) {
+
   /* General styles */
   body {
     font-size: 16px;
@@ -780,7 +1232,7 @@ hr.new4 {
     max-width: 100%;
     height: auto;
   }
-  
+
   .filmbutton {
     position: relative !important;
     display: block !important;
@@ -795,7 +1247,9 @@ hr.new4 {
     color: black;
     transform: scale(1.05);
   }
-  .submitbutton, #Button {
+
+  .submitbutton,
+  #Button {
     width: 70% !important;
     margin: 20px auto !important;
     display: block !important;
@@ -881,8 +1335,81 @@ hr.new4 {
     align-content: center;
   }
 
+  /* Make the entire comments wrapper a grid */
+  .commentsareawrapper {
+    display: grid;
+    grid-template-columns: 1fr; /* single column */
+    grid-row-gap: 15px;         /* spacing between rows */
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+  }
 
-  .homepageinfo, .homepageinfo2 {
+  /* Order items explicitly */
+  .likesFeatureWrapper {
+    grid-row: 1;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+
+  .addCommentsForm {
+    grid-row: 2;
+    width: 100%;
+  }
+
+  #comment-component .formfieldswrapper {
+    display: grid;
+    grid-template-columns: 1fr; /* each input takes full row */
+    grid-row-gap: 10px;
+    width: 100%;
+  }
+
+  #commentsContainer {
+    grid-row: 4;
+    width: 100%;
+  }
+
+  .commentsSection {
+    grid-row: 3;
+  }
+
+  /* Form inputs & textarea full width */
+  #comment-component input,
+  #comment-component textarea,
+  #comment-component button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Optional: adjust font sizes */
+  #comment-component input,
+  #comment-component textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  #comment-component button {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  /* Show Comments button slightly smaller */
+  .commentsExpander {
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+
+
+
+
+  .homepageinfo,
+  .homepageinfo2 {
     width: 90%;
     position: static;
     margin: 20px auto;
@@ -977,6 +1504,79 @@ hr.new4 {
     top: 0;
   }
 
+
+.promotionalvideo {
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* optional for large screens */
+  margin: 20px auto;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+}
+
+.promotionalvideo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+  .pagecontainer {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .postercontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* centers items horizontally */
+    gap: 100px;
+    padding-top: 20px;
+    align-content: flex-start; /* ensures wrapping items don't stretch weirdly vertically */
+    margin: 0 auto; /* optional: centers the whole container */
+  }
+
+  .movieposters {
+    width: 90%;
+    height: auto;
+    max-width: 350px;
+  }
+
+  .countrycontainer,
+  .creditscontainer {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .creditscontainer {
+    margin-left: 0;
+  }
+
+  .countrytitle,
+  .countryname {
+    font-size: 14px;
+    margin-top: 4px;  /* space above each title */
+    margin-bottom: 10px; /* space below title before name */
+  }
+  .countrytitle {
+    margin-top: 30px;
+  }
+  .countryname {
+    font-size: 16px;
+  }
+
+
+  .synopsiscontainer {
+    width: 90%;
+    margin: 20px auto;
+    text-align: justify;
+  }
+
+  .synopsisheader {
+    text-align: center;
+  }
   .aboutlogo {
     margin-top: 40px;
   }
@@ -997,7 +1597,7 @@ hr.new4 {
     margin: 20px auto;
     left: 0;
     position: relative;
-    top:-80px;
+    top: -80px;
   }
 
   /* Submit page styles */
@@ -1026,11 +1626,16 @@ hr.new4 {
   h4 {
     font-size: 24px;
   }
-}
+
 
 /* Tablet styles */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .homepageinfo, .homepageinfo2, .aboutparagraph, .contactparagraph, .submitparagraph {
+
+  .homepageinfo,
+  .homepageinfo2,
+  .aboutparagraph,
+  .contactparagraph,
+  .submitparagraph {
     width: 80%;
     left: 10%;
   }
@@ -1048,6 +1653,38 @@ hr.new4 {
   .vamsinfo {
     flex: 0 0 45%;
   }
+
+  .pagecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .postercontainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; /* centers items horizontally */
+    gap: 20px;
+  }
+  .movieposters {
+    order: 1;
+    width: 90%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .filmtitles {
+    order: 2;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .synopsiscontainer {
+    order: 3;
+    width: 90%;
+    padding: 10px;
+    text-align: justify;
+  }
 }
 
 /* Large screen styles */
@@ -1055,7 +1692,7 @@ hr.new4 {
   body {
     font-size: 18px;
   }
-  
+
   .button {
     padding: 2rem 4rem;
     font-size: 2rem;
@@ -1063,19 +1700,19 @@ hr.new4 {
     font-weight: bold;
     text-align: center;
   }
-  
+
   .homeimageinfo {
     /*bottom: 300px;*/
     max-width: 1200px;
   }
-  
+
   .Mainslogan {
     font-size: 2rem;
     max-width: 1200px;
   }
-  
-  .contactparagraph, 
-  .aboutparagraph, 
+
+  .contactparagraph,
+  .aboutparagraph,
   .submitparagraph {
     max-width: 1000px;
   }
@@ -1100,8 +1737,149 @@ hr.new4 {
 
 }
 
+
 /* Ensure mobile nav is always on top */
 .mobilenav {
   z-index: 1000;
   position: relative;
+}
+#loadingScreen {
+  position: fixed; /* Or absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it's on top of other content */
+}
+
+.spinner {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite; /* CSS animation for spinning */
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+}
+#loadingScreen p{
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/*.commentsareawrapper{*/
+/*  border: 1px solid gray;*/
+/*  border-radius: 5px;*/
+/*  width: 80%;*/
+/*  margin: auto;*/
+/*  padding: 0 10px;*/
+/*  margin-bottom: 20px;*/
+/*}*/
+/*#commentsContainer{*/
+/*  width: 300px;*/
+/*  margin: auto;*/
+/*  margin-bottom: 20px;*/
+/*}*/
+/*.commentWrapper{*/
+/*  border-bottom: 1px solid gray;*/
+/*  border-radius: 5px;*/
+/*  padding: 0 10px;*/
+/*  margin-bottom: 10px;*/
+/*}*/
+/*.marginlessP{*/
+/*  margin: 0;*/
+/*}*/
+/*.commentWriter{*/
+/*  font-size: 14px;*/
+/*}*/
+/*.likesFeatureWrapper{*/
+/*  width: 100px;*/
+/*  margin: auto;*/
+/*}*/
+/*.fa-thumbs-up{*/
+/*  cursor: pointer;*/
+/*}*/
+/*.commentsExpander{*/
+/*  font-size: 20px;*/
+/*  color: blue;*/
+/*  cursor: pointer;*/
+/*}*/
+
+.commentsareawrapper {
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 20px;
+
+  /* Required for mobile ordering */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.likesFeatureWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-thumbs-up {
+  cursor: pointer;
+}
+
+.commentsExpander {
+  font-size: 20px;
+  color: blue;
+  cursor: pointer;
+}
+
+#commentsContainer {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.commentWrapper {
+  border-bottom: 1px solid gray;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.marginlessP {
+  margin: 0;
+}
+
+.commentWriter {
+  font-size: 14px;
+}
+
+comment-component,
+.addCommentsForm {
+  display: block !important;
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.addCommentsForm * {
+  box-sizing: border-box !important;
+  max-width: 100% !important;
 }

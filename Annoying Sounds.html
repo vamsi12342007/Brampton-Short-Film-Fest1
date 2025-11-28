@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Brampton Short Film-Fest (official site)</title>
+  <meta charset="utf-8" />
+  <meta name="author" content="Vamsi Kurli" />
+  <meta name="description" content="VK Creatives (official website)" />
+  <meta name="keywords" content="HTML,CSS,Feature film, film festival" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="Stylesheet/stylesheet2.css" rel="stylesheet" type="text/css" />
+  <link href="Stylesheet/mobile-fixes.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster" />
+  <script src="database.js"></script>
+  <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
+      import { getFirestore, doc, getDocs, setDoc, updateDoc } from 'https://www.gstatic.com/firebasejs/12.4.0/firebase-firestore.js';
+      app = initializeApp(firebaseConfig);
+      db = getFirestore(app);
+      setUpFns("drama", getDocs, doc, updateDoc, setDoc, false);
+  </script>
+  <script src="addcomment.js" type="text/javascript"></script>
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById("mnav");
+      nav.classList.toggle("expanded");
+      console.log("Menu toggled");
+    }
+
+    // Ensure the script runs after the page loads
+    document.addEventListener("DOMContentLoaded", function () {
+      console.log("Page loaded");
+      var hamburger = document.querySelector(".hamburger");
+      if (hamburger) {
+        hamburger.addEventListener("click", function (e) {
+          e.preventDefault();
+          toggleMenu();
+        });
+      }
+      getCommentsAndLikes();
+    });
+  </script>
+</head>
+
+<body>
+  <div class="indexContainer">
+    <div class="Header1 mobileView">
+      <div class="Header1-top">
+        <img class="mainlogo" alt="" src="Images/Logo 3.2.png" width="200" height="100" />
+        <!--        <p class="mainslogan">Brampton Short Film-Fest</p>-->
+        <button class="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+
+     <nav id="mnav" class="Header1 Nav mobilenav">
+        <div class="programicons"><a href="index.html">Home</a></div>
+        <div class="programicons"><a href="Film Collection.html">Film Collection</a></div>
+         <div class="programicons"><a href="Selected films.html">2025 Official Selection</a></div>
+        <div class="programicons"><a href="About.html">About Us</a></div>
+        <div class="programicons"><a href="Submit.html">Submit</a></div>
+        <div class="programicons"><a href="Contact.html">Contact Us</a></div>
+      </nav>
+    </div>
+
+    <div>
+      <p class="filmtitles">Annoying Sounds</p>
+    </div>
+
+    <div class="pagecontainer">
+      <div class="postercontainer">
+        <div>
+          <img class="movieposters" src="Images/Film Poster/Drama/Annoying Sounds.png" width="400" height="900">
+        </div>
+
+        <div class="countrycontainer">
+          <p class="countrytitle">Country</p>
+          <p class="countryname"><span style="color:red">Canada</span></p>
+
+          <p class="countrytitle">Category</p>
+          <p class="countryname"><span style="color:red">Drama</span></p>
+
+          <p class="countrytitle">Release Year</p>
+          <p class="countryname"><span style="color:red">2025</span></p>
+
+          <p class="countrytitle">Director</p>
+          <p class="countryname"><span style="color:red">Daniel Moscovici</span></p>
+
+          <p class="countrytitle">Run-time</p>
+          <p class="countryname"><span style="color:red">11:32 mins</span></p>
+        </div>
+
+        <div class="creditscontainer">
+          <p class="countrytitle">Writers</p>
+          <p class="countryname"><span style="color:red">Daniel Moscovici</span></p>
+
+          <p class="countrytitle">Producers</p>
+          <p class="countryname"><span style="color:red">Daniel Moscovici</span></p>
+
+          <p class="countrytitle">Editor</p>
+          <p class="countryname"><span style="color:red">Sam De Los Santos</span></p>
+
+          <p class="countrytitle">Cinematography</p>
+          <p class="countryname"><span style="color:red">Jeremy Glavac</span></p>
+        </div>
+
+        <div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="synopsiscontainer">
+      <h4 class="synopsisheader">Synopsis</h4>
+      <p id="whatsynopsis"> Two mothers meet at a cemetery reminiscing about their sons lost to a war long since gone
+      </p>
+    </div>
+
+      <div class="promotionalvideo">
+      <iframe id="SIBIMLfilm" width="420" height="315"
+        src="https://www.youtube.com/embed/ElX_lbVdpYs?si=82KsyhwLEvUL0ioJ"></iframe>
+      </iframe>
+    </div>
+    <div class="commentsareawrapper">
+        <div class="likesFeatureWrapper">
+            <i onclick="handlelikebutton(event)" id="drama7" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+            <span style="float: right;" id="iddrama7likes">0 likes</span>
+        </div>
+        <comment-component class="addCommentsForm" id="drama7comment"></comment-component>
+        <div class="commentsSection">
+            <h4 class="marginlessP"><span onclick="toggleComments()" class="commentsExpander">Show Comments</span></h4>
+            <div id="commentsContainer" style="display: none;"></div>
+        </div>
+    </div>
+
+    
+    <footer class="footer">
+      <div class="contactContainer">
+        <!--          <img-->
+        <!--            class="footericons"-->
+        <!--            src="Images/Nav Icons/Email Icon.png"-->
+        <!--            alt="email icon"-->
+        <!--            width="40"-->
+        <!--            height="30"-->
+        <!--          />-->
+        <p>bramptonshortfilmfest@gmail.com</p>
+      </div>
+      <div class="contactContainer">
+        <!--          <img-->
+        <!--            class="footericons"-->
+        <!--            src="Images/Nav Icons/telephone_1104586.png"-->
+        <!--            alt="telephone icon"-->
+        <!--            width="40"-->
+        <!--            height="30"-->
+        <!--          />-->
+      </div>
+      <div class="contactContainer">
+        <!--          <img-->
+        <!--            class="footericons"-->
+        <!--            src="Images/Nav Icons/world-wide-web.png"-->
+        <!--            alt="web icon"-->
+        <!--            width="40"-->
+        <!--            height="30"-->
+        <!--          />-->
+        <p>bramptonshortfilm-fest.com</p>
+      </div>
+      <i>
+        <p>Short in Length, Long in Impact.</p>
+      </i>
+      <p>&copy; 2025 Brampton Film-Fest (Official Site)</p>
+    </footer>
+  </div>
+</body>

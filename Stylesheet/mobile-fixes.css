@@ -21,15 +21,15 @@
     top: 0 !important;
   }
 
-  .promotionalvideo {
-    position: relative;
-    right: 600px;
-  }
+  /*.promotionalvideo {*/
+  /*  position: relative;*/
+  /*  right: 600px;*/
+  /*}*/
 
-  #promotionalvideo {
-    width: 300px;
-    height: 300px;
-  }
+  /*#promotionalvideo {*/
+  /*  width: 300px;*/
+  /*  height: 300px;*/
+  /*}*/
 
 
   /* Add some spacing between elements */

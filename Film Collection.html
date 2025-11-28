@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Brampton Short Film-Fest (official site)</title>
+  <meta charset="utf-8" />
+  <meta name="author" content="Vamsi Kurli" />
+  <meta name="description" content="VK Creatives (official website)" />
+  <meta name="keywords" content="HTML,CSS,Feature film, film festival" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="Stylesheet/stylesheet2.css" rel="stylesheet" type="text/css" />
+  <link href="Stylesheet/mobile-fixes.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster" />
+
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById("mnav");
+      nav.classList.toggle("expanded");
+      console.log("Menu toggled");
+    }
+
+    // Ensure the script runs after the page loads
+    document.addEventListener("DOMContentLoaded", function () {
+      console.log("Page loaded");
+      var hamburger = document.querySelector(".hamburger");
+      if (hamburger) {
+        hamburger.addEventListener("click", function (e) {
+          e.preventDefault();
+          toggleMenu();
+        });
+      }
+    });
+  </script>
+
+  <style>
+    img {
+      border-radius: 50px;
+
+
+    }
+
+    .genres {
+      display: flex;
+      justify-content: space-around;
+      width: 200px;
+      position: relative;
+      left: 500px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="indexContainer">
+    <div class="Header1 mobileView">
+      <div class="Header1-top">
+        <img class="mainlogo" alt="" src="Images/Logo 3.2.png" width="200" height="100" />
+        <!--        <p class="mainslogan">Brampton Short Film-Fest</p>-->
+        <button class="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+
+     <nav id="mnav" class="Header1 Nav mobilenav">
+        <div class="programicons"><a href="index.html">Home</a></div>
+        <div class="programicons"><a href="Film Collection.html">Film Collection</a></div>
+         <div class="programicons"><a href="Selected films.html">2025 Official Selection</a></div>
+        <div class="programicons"><a href="About.html">About Us</a></div>
+        <div class="programicons"><a href="Submit.html">Submit</a></div>
+        <div class="programicons"><a href="Contact.html">Contact Us</a></div>
+      </nav>
+    </div>
+
+<!--    <div class="film-collection">-->
+<!--      <img class="filmcollectionimage" src="Images/Genres/Film Collection.png" alt="Film Collection">-->
+<!--    </div>-->
+    <div>
+      <p class="collectionhead">BSFF Film Collection</p>
+    </div>
+
+    <div class="genres-grid">
+      <a href="Drama.html"><button type="button">Drama</button></a>
+      <a href="Comedy.html"><button type="button">Comedy</button></a>
+      <a href="Animation.html"><button type="button">Animation</button></a>
+      <a href="Student Films.html"><button type="button">Student</button></a>
+      <a href="Horror.html"><button type="button">Horror</button></a>
+      <a href="Action.html"><button type="button">Action</button></a>
+      <a href="Foreign Films.html"><button type="button">Foreign</button></a>
+      <a href="Romance.html"><button type="button">Romance</button></a>
+      <a href="Documentary.html"><button type="button">Documentary</button></a>
+      <a href="Fantasy.html"><button type="button">Fantasy</button></a>
+    </div>
+
+
+    <footer class="footer">
+      <div class="contactContainer">
+        <!--          <img-->
+        <!--            class="footericons"-->
+        <!--            src="Images/Nav Icons/Email Icon.png"-->
+        <!--            alt="email icon"-->
+        <!--            width="40"-->
+        <!--            height="30"-->
+        <!--          />-->
+        <p>bramptonshortfilmfest@gmail.com</p>
+      </div>
+      <div class="contactContainer">
+        <!--          <img-->
+        <!--            class="footericons"-->
+        <!--            src="Images/Nav Icons/telephone_1104586.png"-->
+        <!--            alt="telephone icon"-->
+        <!--            width="40"-->
+        <!--            height="30"-->
+        <!--          />-->
+      </div>
+      <div class="contactContainer">
+        <!--          <img-->
+        <!--            class="footericons"-->
+        <!--            src="Images/Nav Icons/world-wide-web.png"-->
+        <!--            alt="web icon"-->
+        <!--            width="40"-->
+        <!--            height="30"-->
+        <!--          />-->
+        <p>bramptonshortfilm-fest.com</p>
+      </div>
+      <i>
+        <p>Short in Length, Long in Impact.</p>
+      </i>
+      <p>&copy; 2025 Brampton Film-Fest (Official Site)</p>
+    </footer>
+  </div>
+</body>

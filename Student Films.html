@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Brampton Short Film-Fest (official site)</title>
+  <meta charset="utf-8" />
+  <meta name="author" content="Vamsi Kurli" />
+  <meta name="description" content="VK Creatives (official website)" />
+  <meta name="keywords" content="HTML,CSS,Feature film, film festival" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="Stylesheet/stylesheet2.css" rel="stylesheet" type="text/css" />
+  <link href="Stylesheet/mobile-fixes.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster" />
+
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById("mnav");
+      nav.classList.toggle("expanded");
+      console.log("Menu toggled");
+    }
+
+    // Ensure the script runs after the page loads
+    document.addEventListener("DOMContentLoaded", function () {
+      console.log("Page loaded");
+      var hamburger = document.querySelector(".hamburger");
+      if (hamburger) {
+        hamburger.addEventListener("click", function (e) {
+          e.preventDefault();
+          toggleMenu();
+        });
+      }
+    });
+  </script>
+
+  <style>
+    img {
+      border-radius: 50px;
+
+
+    }
+
+    .genres {
+      display: flex;
+      justify-content: space-around;
+      width: 200px;
+      position: relative;
+      left: 500px;
+    }
+  </style>
+</head>
+<script src="database.js"></script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
+  import { getFirestore, doc, updateDoc, setDoc, collection, getDocs } from 'https://www.gstatic.com/firebasejs/12.4.0/firebase-firestore.js';
+  // Initialize Firebase
+  app = initializeApp(firebaseConfig);
+  db = getFirestore(app);
+  moviesCol = collection(db, 'movies');
+  count = 10
+  setUpFns("student", getDocs, doc, updateDoc, setDoc);
+</script>
+<body>
+  <div class="indexContainer">
+    <div class="Header1 mobileView">
+      <div class="Header1-top">
+        <img class="mainlogo" alt="" src="Images/Logo 3.2.png" width="200" height="100" />
+        <!--        <p class="mainslogan">Brampton Short Film-Fest</p>-->
+        <button class="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+
+     <nav id="mnav" class="Header1 Nav mobilenav">
+        <div class="programicons"><a href="index.html">Home</a></div>
+        <div class="programicons"><a href="Film Collection.html">Film Collection</a></div>
+         <div class="programicons"><a href="Selected films.html">2025 Official Selection</a></div>
+        <div class="programicons"><a href="About.html">About Us</a></div>
+        <div class="programicons"><a href="Submit.html">Submit</a></div>
+        <div class="programicons"><a href="Contact.html">Contact Us</a></div>
+      </nav>
+    </div>
+
+    <div>
+      <p class="genresheadlines">Student Films</p>
+    </div>
+
+  <div class="filmpostercontainer">
+        <div>    
+          <a href="What We Become.html"><img class="filmposters" src="Images/Film Poster/Student Films/What we become.png" width="150" height="350"></a>
+          <i id="student1" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+          <span style="float: right;" id="idstudent1likes">0 likes</span>
+        </div>
+        <div>
+          <a href="Hello Wish You Well Goodbye.html"><img class="filmposters" src="Images/Film Poster/Student Films/Hello Wish You Well Goodbye.png" width="150" height="350"></a>
+          <i id="student2" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+          <span style="float: right;" id="idstudent2likes">0 likes</span>
+        </div>
+        <div>
+          <a href="Perfect Show.html"><img class="filmposters" src="Images/Film Poster/Student Films/Perfect Show.png" width="150" height="350"></a>
+          <i id="student3" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+          <span style="float: right;" id="idstudent3likes">0 likes</span>
+        </div>
+        <div>
+          <a href="Tea Time.html"><img class="filmposters" src="Images/Film Poster/Student Films/Tea Time.png" width="150" height="350"></a>
+          <i id="student4" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+          <span style="float: right;" id="idstudent4likes">0 likes</span>
+        </div>
+        <div>
+          <a href="Photosniper.html"><img class="filmposters" src="Images/Film Poster/Student Films/Photosniper.png" width="150" height="350"></a>
+          <i id="student5" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+          <span style="float: right;" id="idstudent5likes">0 likes</span>
+        </div>
+          <div>
+          <a href="The Orient.html"><img class="filmposters" src="Images/Film Poster/Student Films/The Orient.png" width="150" height="350"></a>
+          <i id="student6" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+          <span style="float: right;" id="idstudent6likes">0 likes</span>
+        </div>
+          <div>
+          <a href="Where The Water meets the sand.html"><img class="filmposters" src="Images/Film Poster/Student Films/Where The Water meets the Sand.png" width="150" height="350"></a>
+          <i id="student7" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+          <span style="float: right;" id="idstudent7likes">0 likes</span>
+        </div>
+          <div>
+          <a href="Something called Sonder.html"><img class="filmposters" src="Images/Film Poster/Student Films/Something Called Sonder.png" width="150" height="350"></a>
+          <i id="student8" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+          <span style="float: right;" id="idstudent8likes">0 likes</span>
+        </div>
+          <div>
+          <a href="Inspiration in White.html"><img class="filmposters" src="Images/Film Poster/Student Films/Inspiration in White.png" width="150" height="350"></a>
+          <i id="student9" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+          <span style="float: right;" id="idstudent9likes">0 likes</span>
+        </div>
+          <div>
+          <a href="Cuddle Buddies.html"><img class="filmposters" src="Images/Film Poster/Student Films/Cuddle Buddies.png" width="150" height="350"></a>
+          <i id="student10" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+          <span style="float: right;" id="idstudent10likes">0 likes</span>
+        </div>
+  </div>
+    
+    <footer class="footer">
+      <div class="contactContainer">
+        <!--          <img-->
+        <!--            class="footericons"-->
+        <!--            src="Images/Nav Icons/Email Icon.png"-->
+        <!--            alt="email icon"-->
+        <!--            width="40"-->
+        <!--            height="30"-->
+        <!--          />-->
+        <p>bramptonshortfilmfest@gmail.com</p>
+      </div>
+      <div class="contactContainer">
+        <!--          <img-->
+        <!--            class="footericons"-->
+        <!--            src="Images/Nav Icons/telephone_1104586.png"-->
+        <!--            alt="telephone icon"-->
+        <!--            width="40"-->
+        <!--            height="30"-->
+        <!--          />-->
+      </div>
+      <div class="contactContainer">
+        <!--          <img-->
+        <!--            class="footericons"-->
+        <!--            src="Images/Nav Icons/world-wide-web.png"-->
+        <!--            alt="web icon"-->
+        <!--            width="40"-->
+        <!--            height="30"-->
+        <!--          />-->
+        <p>bramptonshortfilm-fest.com</p>
+      </div>
+      <i>
+        <p>Short in Length, Long in Impact.</p>
+      </i>
+      <p>&copy; 2025 Brampton Film-Fest (Official Site)</p>
+    </footer>
+  </div>
+</body>
+<div id="loadingScreen">
+  <!-- Loading content goes here, e.g., a spinner or "Loading..." text -->
+  <div class="spinner"></div>
+  <p>Loading...</p>
+</div>
