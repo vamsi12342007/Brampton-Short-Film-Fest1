@@ -67,7 +67,7 @@
   app = initializeApp(firebaseConfig);
   db = getFirestore(app);
   moviesCol = collection(db, 'movies');
-  count = 11;
+  count = 14;
   setUpFns("drama", getDocs, doc, updateDoc, setDoc);
 </script>
 
@@ -114,14 +114,14 @@
         <span style="float: right;" id="iddrama2likes">0 likes</span>
       </div>
       <div>
-        <a href="Junkies.html">
+        <a href="junkies.html">
           <img class="filmposters" src="Images/Film Poster/Drama/Junkies.png" alt="Junkies">
         </a>
         <i id="drama3" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
         <span style="float: right;" id="iddrama3likes">0 likes</span>
       </div>
       <div>
-        <a href="The Road out.html">
+        <a href="The road out.html">
           <img class="filmposters" src="Images/Film Poster/Drama/The Road Out.png" alt="The Road Out">
         </a>
         <i id="drama4" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
@@ -179,8 +179,28 @@
         <i id="drama11" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
         <span style="float: right;" id="iddrama11likes">0 likes</span>
       </div>
+         <div>
+        <a href="Her Name is Lola.html">
+          <img class="filmposters" src="Images/Film Poster/Drama/Her Name is Lola.png" alt="Annoying Sounds">
+        </a>
+        <i id="drama12" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+        <span style="float: right;" id="iddrama12likes">0 likes</span>
+      </div>
+      <div>
+        <a href="What Lies Between Us.html">
+          <img class="filmposters" src="Images/Film Poster/Drama/What Lies Between Us.png" alt="Annoying Sounds">
+        </a>
+        <i id="drama13" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+        <span style="float: right;" id="iddrama13likes">0 likes</span>
+      </div>
+            <div>
+        <a href="The Intervention.html">
+          <img class="filmposters" src="Images/Film Poster/Drama/The Intervention.png" alt="Annoying Sounds">
+        </a>
+        <i id="drama14" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+        <span style="float: right;" id="iddrama14likes">0 likes</span>
+      </div>
     </div>
-
 
     <footer class="footer">
       <div class="contactContainer">
@@ -223,5 +243,4 @@
   <!-- Loading content goes here, e.g., a spinner or "Loading..." text -->
   <div class="spinner"></div>
   <p>Loading...</p>
-
 </div>
