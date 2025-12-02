@@ -21,7 +21,7 @@
     import { getFirestore, doc, getDocs, setDoc, updateDoc } from 'https://www.gstatic.com/firebasejs/12.4.0/firebase-firestore.js';
     app = initializeApp(firebaseConfig);
     db = getFirestore(app);
-    setUpFns("horror", getDocs, doc, updateDoc, setDoc, false);
+    setUpFns("foreign", getDocs, doc, updateDoc, setDoc, false);
   </script>
   <script src="addcomment.js" type="text/javascript"></script>
   <script>
@@ -118,10 +118,10 @@
 
     <div class="commentsareawrapper">
       <div class="likesFeatureWrapper">
-        <i onclick="handlelikebutton(event)" id="horror4" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
-        <span style="float: right;" id="idhorror24likes">0 likes</span>
+        <i onclick="handlelikebutton(event)" id="foreign1" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+        <span style="float: right;" id="idforeign1likes">0 likes</span>
       </div>
-      <comment-component class="addCommentsForm" id="horror4comment"></comment-component>
+      <comment-component class="addCommentsForm" id="foreign1comment"></comment-component>
       <div class="commentsSection">
         <h4 class="marginlessP"><span onclick="toggleComments()" class="commentsExpander">Show Comments</span></h4>
         <div id="commentsContainer" style="display: none;"></div>
