@@ -63,7 +63,14 @@
             movie = allMovies.find(o=> o.id == id);
             if(movie){
                 let movieRef = doc(db, "movies", id);
-                await updateDoc(movieRef, movie);
+                try {
+                    await updateDoc(movieRef, movie);   
+                } catch (error) {
+                    if(error.code =='not-found'){
+                        const docRef = doc(db, "movies", id);
+                        await setDoc(docRef, data);
+                    }
+                }
             }
             else{
                 const docRef = doc(db, "movies", id);
