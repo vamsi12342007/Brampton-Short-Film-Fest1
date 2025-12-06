@@ -122,17 +122,20 @@ class Header extends HTMLElement {
       let currentID = document.getElementsByTagName("comment-component")[0].id.replace('comment','');
       let currMovie= movies.find(o=>o.id==currentID);
       let CurrMovieType = currentID.replace(/\d+$/, '');
-      if(currMovie?.comments){
-        currMovie.comments.push(newComment);
-      }
-      else{
+      if(!currMovie){
         currMovie = {
-          type:CurrMovieType,
+          type: CurrMovieType,
           id: currentID,
-          likes:0,
+          likes: 0,
           comments: [newComment]
         }
         movies.push(currMovie);
+      }
+      else if(!currMovie.comments){
+        currMovie.comments = [newComment]
+      }
+      else if(currMovie && currMovie.comments){
+        currMovie.comments.push(newComment);
       }
       sessionStorage.setItem("movies", JSON.stringify(movies));
       submitCommentToDatabase(currentID, currMovie);
