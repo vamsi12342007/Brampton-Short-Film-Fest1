@@ -24,7 +24,7 @@
         setUpFns("comedy", getDocs, doc, updateDoc, setDoc, false);
     </script>
     <script src="addcomment.js" type="text/javascript"></script>
-        <script>
+    <script>
         function toggleMenu() {
             var nav = document.getElementById("mnav");
             nav.classList.toggle("expanded");
@@ -58,21 +58,21 @@
             </div>
 
 
-     <nav id="mnav" class="Header1 Nav mobilenav">
-        <div class="programicons"><a href="index.html">Home</a></div>
-        <div class="programicons"><a href="Film Collection.html">Film Collection</a></div>
-         <div class="programicons"><a href="Selected films.html">2025 Official Selection</a></div>
-        <div class="programicons"><a href="About.html">About Us</a></div>
-        <div class="programicons"><a href="Submit.html">Submit</a></div>
-        <div class="programicons"><a href="Contact.html">Contact Us</a></div>
-      </nav>
-    </div>
+            <nav id="mnav" class="Header1 Nav mobilenav">
+                <div class="programicons"><a href="index.html">Home</a></div>
+                <div class="programicons"><a href="Film Collection.html">Film Collection</a></div>
+                <div class="programicons"><a href="Selected films.html">2025 Official Selection</a></div>
+                <div class="programicons"><a href="About.html">About Us</a></div>
+                <div class="programicons"><a href="Submit.html">Submit</a></div>
+                <div class="programicons"><a href="Contact.html">Contact Us</a></div>
+            </nav>
+        </div>
 
         <div>
             <p class="filmtitles">Booked</p>
         </div>
 
- 
+
         <div class="pagecontainer">
             <div class="postercontainer">
                 <div>
@@ -122,28 +122,34 @@
                 journalist infiltrates the underground world of illicit book clubs and blackmarket literature dealers.
             </p>
         </div>
-        </div>
+    </div>
 
-               <div class="promotionalvideo">
-            <iframe id="SIBIMLfilm" width="420" height="315"
-                src="https://www.youtube.com/embed/OhXLRy6EPRI?si=B3IVtUpBk_rJDEue"></iframe>
-            </iframe>
+    <div class="promotionalvideo">
+        <iframe id="SIBIMLfilm" width="420" height="315"
+            src="https://www.youtube.com/embed/OhXLRy6EPRI?si=B3IVtUpBk_rJDEue"></iframe>
+        </iframe>
+    </div>
+
+    <div>
+        <h4 class="callcomments">Enjoyed the film? Hit like and leave a comment to support the filmmaker!</h4>
+    </div>
+
+    <div class="commentsareawrapper">
+        <div class="likesFeatureWrapper">
+            <i onclick="handlelikebutton(event)" id="comedy3" class="fa fa-thumbs-up"
+                style="font-size:24px;color:blue"></i>
+            <span style="float: right;" id="idcomedy3likes">0 likes</span>
         </div>
-        <div class="commentsareawrapper">
-            <div class="likesFeatureWrapper">
-                <i onclick="handlelikebutton(event)" id="comedy3" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
-                <span style="float: right;" id="idcomedy3likes">0 likes</span>
-            </div>
-            <comment-component class="addCommentsForm" id="comedy3comment"></comment-component>
-            <div class="commentsSection">
-                <h4 class="marginlessP"><span onclick="toggleComments()" class="commentsExpander">Show Comments</span></h4>
-                <div id="commentsContainer" style="display: none;"></div>
-            </div>
+        <comment-component class="addCommentsForm" id="comedy3comment"></comment-component>
+        <div class="commentsSection">
+            <h4 class="marginlessP"><span onclick="toggleComments()" class="commentsExpander">Show Comments</span></h4>
+            <div id="commentsContainer" style="display: none;"></div>
         </div>
+    </div>
 </body>
 
- <footer class="footer">
-      <div class="contactContainer">
+<footer class="footer">
+    <div class="contactContainer">
         <!--          <img-->
         <!--            class="footericons"-->
         <!--            src="Images/Nav Icons/Email Icon.png"-->
@@ -152,8 +158,8 @@
         <!--            height="30"-->
         <!--          />-->
         <p>bramptonshortfilmfest@gmail.com</p>
-      </div>
-      <div class="contactContainer">
+    </div>
+    <div class="contactContainer">
         <!--          <img-->
         <!--            class="footericons"-->
         <!--            src="Images/Nav Icons/telephone_1104586.png"-->
@@ -161,8 +167,8 @@
         <!--            width="40"-->
         <!--            height="30"-->
         <!--          />-->
-      </div>
-      <div class="contactContainer">
+    </div>
+    <div class="contactContainer">
         <!--          <img-->
         <!--            class="footericons"-->
         <!--            src="Images/Nav Icons/world-wide-web.png"-->
@@ -171,11 +177,10 @@
         <!--            height="30"-->
         <!--          />-->
         <p>bramptonshortfilm-fest.com</p>
-      </div>
-      <i>
+    </div>
+    <i>
         <p>Short in Length, Long in Impact.</p>
-      </i>
-      <p>&copy; 2025 Brampton Film-Fest (Official Site)</p>
-    </footer>
-    </body>
-
+    </i>
+    <p>&copy; 2025 Brampton Film-Fest (Official Site)</p>
+</footer>
+</body>
