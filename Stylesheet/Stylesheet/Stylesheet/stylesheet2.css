@@ -26,15 +26,6 @@ body {
   text-align: center;
 }
 
-.callcomments {
-  position: relative;
-  top:-40px;
-}
-
-.callcommentswhat {
-    position: relative;
-  top:-120px;
-}
 
 .filmselection {
   border: 3px solid black;
@@ -100,6 +91,7 @@ body {
   padding-bottom: 60px;
 }
 
+
 .filmcollectionimage {
   width: 100%;
   max-width: 1200px;
@@ -161,13 +153,6 @@ body {
 }
 
 #whatsynopsis {
-  font-size: 20px;
-  text-align: left;
-  position: relative;
-  top: -80px;
-}
-
-#whatsynopsis2 {
   font-size: 20px;
   text-align: center;
   position: relative;
