@@ -61,9 +61,10 @@
   app = initializeApp(firebaseConfig);
   db = getFirestore(app);
   moviesCol = collection(db, 'movies');
-  count = 9;
+  count = 11;
   setUpFns("horror", getDocs, doc, updateDoc, setDoc);
 </script>
+
 <body>
   <div class="indexContainer">
     <div class="Header1 mobileView">
@@ -76,10 +77,10 @@
       </div>
 
 
-     <nav id="mnav" class="Header1 Nav mobilenav">
+      <nav id="mnav" class="Header1 Nav mobilenav">
         <div class="programicons"><a href="index.html">Home</a></div>
         <div class="programicons"><a href="Film Collection.html">Film Collection</a></div>
-         <div class="programicons"><a href="Selected films.html">2025 Official Selection</a></div>
+        <div class="programicons"><a href="Selected films.html">2025 Official Selection</a></div>
         <div class="programicons"><a href="About.html">About Us</a></div>
         <div class="programicons"><a href="Submit.html">Submit</a></div>
         <div class="programicons"><a href="Contact.html">Contact Us</a></div>
@@ -92,58 +93,70 @@
 
     <div class="filmpostercontainer">
       <div>
-          <a href="Resurrection.html"><img class="filmposters" src="Images/Film Poster/Horror/Resurrection.png" width="150"
-          height="350"></a>
-          <i id="horror1" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
-          <span style="float: right;" id="idhorror1likes">0 likes</span>
+        <a href="Resurrection.html"><img class="filmposters" src="Images/Film Poster/Horror/Resurrection.png"
+            width="150" height="350"></a>
+        <i id="horror1" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+        <span style="float: right;" id="idhorror1likes">0 likes</span>
       </div>
       <div>
-          <a href="Dark Brandon.html"><img class="filmposters" src="Images/Film Poster/Horror/Dark Brandon.png" width="150"
-          height="350"></a>
-          <i id="horror2" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
-          <span style="float: right;" id="idhorror2likes">0 likes</span>
+        <a href="Dark Brandon.html"><img class="filmposters" src="Images/Film Poster/Horror/Dark Brandon.png"
+            width="150" height="350"></a>
+        <i id="horror2" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+        <span style="float: right;" id="idhorror2likes">0 likes</span>
       </div>
       <div>
-          <a href="Refuge.html"><img class="filmposters" src="Images/Film Poster/Horror/Refuge.png" width="150"
-          height="350"></a>
-          <i id="horror3" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
-          <span style="float: right;" id="idhorror3likes">0 likes</span>
+        <a href="Refuge.html"><img class="filmposters" src="Images/Film Poster/Horror/Refuge.png" width="150"
+            height="350"></a>
+        <i id="horror3" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+        <span style="float: right;" id="idhorror3likes">0 likes</span>
       </div>
       <div>
-          <a href="Garage Sale Massasre.html"><img class="filmposters" src="Images/Film Poster/Horror/Garage Sale Massasre.png" width="150"
-          height="350"></a>
-          <i id="horror4" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
-          <span style="float: right;" id="idhorror4likes">0 likes</span>
+        <a href="Garage Sale Massasre.html"><img class="filmposters"
+            src="Images/Film Poster/Horror/Garage Sale Massasre.png" width="150" height="350"></a>
+        <i id="horror4" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+        <span style="float: right;" id="idhorror4likes">0 likes</span>
       </div>
       <div>
-          <a href="Incident at Longshaw.html"><img class="filmposters" src="Images/Film Poster/Horror/Incident at Longshaw.png" width="150"
-          height="350"></a>
-          <i id="horror5" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
-          <span style="float: right;" id="idhorror5likes">0 likes</span>
+        <a href="Incident at Longshaw.html"><img class="filmposters"
+            src="Images/Film Poster/Horror/Incident at Longshaw.png" width="150" height="350"></a>
+        <i id="horror5" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+        <span style="float: right;" id="idhorror5likes">0 likes</span>
       </div>
       <div>
-          <a href="Karak.html"><img class="filmposters" src="Images/Film Poster/Horror/Karak.png" width="150"
-          height="350"></a>
-          <i id="horror6" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
-          <span style="float: right;" id="idhorror6likes">0 likes</span>
+        <a href="Karak.html"><img class="filmposters" src="Images/Film Poster/Horror/Karak.png" width="150"
+            height="350"></a>
+        <i id="horror6" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+        <span style="float: right;" id="idhorror6likes">0 likes</span>
       </div>
       <div>
-          <a href="The Clone.html"><img class="filmposters" src="Images/Film Poster/Horror/The Clone.png" width="150"
-          height="350"></a>
-          <i id="horror7" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
-          <span style="float: right;" id="idhorror7likes">0 likes</span>
+        <a href="The Clone.html"><img class="filmposters" src="Images/Film Poster/Horror/The Clone.png" width="150"
+            height="350"></a>
+        <i id="horror7" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+        <span style="float: right;" id="idhorror7likes">0 likes</span>
       </div>
       <div>
-          <a href="Urn.html"><img class="filmposters" src="Images/Film Poster/Horror/Urn.png" width="150"
-          height="350"></a>
-          <i id="horror8" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
-          <span style="float: right;" id="idhorror8likes">0 likes</span>
+        <a href="Urn.html"><img class="filmposters" src="Images/Film Poster/Horror/Urn.png" width="150"
+            height="350"></a>
+        <i id="horror8" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+        <span style="float: right;" id="idhorror8likes">0 likes</span>
       </div>
       <div>
-          <a href="Inheritance.html"><img class="filmposters" src="Images/Film Poster/Horror/Inheritance.png" width="150"
-          height="350"></a>
-          <i id="horror9" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
-          <span style="float: right;" id="idhorror9likes">0 likes</span>
+        <a href="Inheritance.html"><img class="filmposters" src="Images/Film Poster/Horror/Inheritance.png" width="150"
+            height="350"></a>
+        <i id="horror9" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+        <span style="float: right;" id="idhorror9likes">0 likes</span>
+      </div>
+      <div>
+        <a href="A Artist's Curse.html"><img class="filmposters" src="Images/Film Poster/Horror/A Artist's Curse.png"
+            width="150" height="350"></a>
+        <i id="horror10" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+        <span style="float: right;" id="idhorror10likes">0 likes</span>
+      </div>
+            <div>
+        <a href="Return To Elenore.html"><img class="filmposters" src="Images/Film Poster/Horror/Return To Elenon.png"
+            width="150" height="350"></a>
+        <i id="horror11" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+        <span style="float: right;" id="idhorror11likes">0 likes</span>
       </div>
     </div>
 

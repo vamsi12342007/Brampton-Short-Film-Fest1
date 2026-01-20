@@ -15,7 +15,15 @@
   <link href="Stylesheet/stylesheet2.css" rel="stylesheet" type="text/css" />
   <link href="Stylesheet/mobile-fixes.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster" />
-
+  <script src="database.js"></script>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
+    import { getFirestore, doc, getDocs, setDoc, updateDoc } from 'https://www.gstatic.com/firebasejs/12.4.0/firebase-firestore.js';
+    app = initializeApp(firebaseConfig);
+    db = getFirestore(app);
+    setUpFns("horror", getDocs, doc, updateDoc, setDoc, false);
+  </script>
+  <script src="addcomment.js" type="text/javascript"></script>
   <script>
     function toggleMenu() {
       var nav = document.getElementById("mnav");
@@ -33,37 +41,10 @@
           toggleMenu();
         });
       }
+      getCommentsAndLikes();
     });
   </script>
-
-  <style>
-    img {
-      border-radius: 50px;
-
-
-    }
-
-    .genres {
-      display: flex;
-      justify-content: space-around;
-      width: 200px;
-      position: relative;
-      left: 500px;
-    }
-  </style>
 </head>
-<script src="database.js"></script>
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
-  import { getFirestore, doc, updateDoc, setDoc, collection, getDocs } from 'https://www.gstatic.com/firebasejs/12.4.0/firebase-firestore.js';
-  // Initialize Firebase
-  app = initializeApp(firebaseConfig);
-  db = getFirestore(app);
-  moviesCol = collection(db, 'movies');
-  count = 5;
-  setUpFns("animation", getDocs, doc, updateDoc, setDoc);
-</script>
 
 <body>
   <div class="indexContainer">
@@ -76,7 +57,6 @@
         </button>
       </div>
 
-
       <nav id="mnav" class="Header1 Nav mobilenav">
         <div class="programicons"><a href="index.html">Home</a></div>
         <div class="programicons"><a href="Film Collection.html">Film Collection</a></div>
@@ -88,43 +68,82 @@
     </div>
 
     <div>
-      <p class="genresheadlines">Animation</p>
+      <p class="filmtitles">An Artist's Curse</p>
     </div>
 
-    <div class="filmpostercontainer">
-      <div>
-        <a href="eXperiment 1.html"><img class="filmposters" src="Images/Film Poster/Animation/eXperiment 1.png"
-            width="150" height="350"></a>
-        <i id="animation1" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
-        <span style="float: right;" id="idanimation1likes">0 likes</span>
-      </div>
-      <div>
-        <a href="The Three Scrawny Wolves.html"><img class="filmposters"
-            src="Images/Film Poster/Animation/The Three Scrawny Wolves.png" width="350" height="150"></a>
-        <i id="animation2" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
-        <span style="float: right;" id="idanimation2likes">0 likes</span>
-      </div>
-      <div>
-        <a href="Those McPhuqurs.html"><img class="filmposters" src="Images/Film Poster/Animation/Those Mcphuqurs.png"
-            width="350" height="150"></a>
-        <i id="animation3" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
-        <span style="float: right;" id="idanimation3likes">0 likes</span>
-      </div>
-      <div>
-        <a href="Artblocked.html"><img class="filmposters" src="Images/Film Poster/Animation/Artblocked.png" width="350"
-            height="150"></a>
-        <i id="animation4" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
-        <span style="float: right;" id="idanimation4likes">0 likes</span>
-      </div>
-         <div>
-        <a href="Trading Cards.html"><img class="filmposters" src="Images/Film Poster/Animation/Trading Cards 2.png" width="350"
-            height="150"></a>
-        <i id="animation5" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
-        <span style="float: right;" id="idanimation5likes">0 likes</span>
-      </div>
+    <div class="pagecontainer">
+      <div class="postercontainer">
+        <div>
+          <img class="movieposters" src="Images/Film Poster/Horror/A Artist's Curse.png" width="400" height="900">
+        </div>
 
+        <div class="countrycontainer">
+          <p class="countrytitle">Country</p>
+          <p class="countryname"><span style="color:red">Australia</span></p>
+
+          <p class="countrytitle">Category</p>
+          <p class="countryname"><span style="color:red">Horror</span></p>
+
+          <p class="countrytitle">Release Year</p>
+          <p class="countryname"><span style="color:red">2025</span></p>
+
+          <p class="countrytitle">Director</p>
+          <p class="countryname"><span style="color:red">Steven J Mihaljevich</span></p>
+
+          <p class="countrytitle">Run-time</p>
+          <p class="countryname"><span style="color:red">10:00 mins</span></p>
+        </div>
+
+        <div class="creditscontainer">
+          <p class="countrytitle">Writers</p>
+          <p class="countryname"><span style="color:red">Steven J Mihaljevich</span></p>
+
+          <p class="countrytitle">Producers</p>
+          <p class="countryname"><span style="color:red">Jay Jay Jegathesan</span></p>
+
+          <p class="countrytitle">Cinematography</p>
+          <p class="countryname"><span style="color:red">Shane Piggott</span></p>
+
+          <p class="countrytitle">Editor</p>
+          <p class="countryname"><span style="color:red">Steven J Mihaljevich</span></p>
+        </div>
+
+        <div>
+
+        </div>
+      </div>
     </div>
 
+    <div class="synopsiscontainer">
+      <h4 class="synopsisheader">Synopsis</h4>
+      <p id="whatsynopsis">
+        A sinister force lurks within the artwork of a 10-year-old girl, binding her to a terror that refuses to fade.
+        Years later, as she becomes a mother, the nightmares of her childhood bleed into her present, blurring the line
+        between delusion and reality. When the truth about her daughter emerges, art and horror collide in a revelation
+        too shocking to escape.</p>
+    </div>
+
+    <div class="promotionalvideo">
+      <iframe id="SIBIMLfilm" width="420" height="315"
+        src="https://www.youtube.com/embed/6x--idqXFSQ?si=RTdBjVBcXRQ7xu1L"></iframe>
+      </iframe>
+    </div>
+
+    <div>
+      <h4 class="callcomments">Enjoyed the film? Hit like and leave a comment to support the filmmaker!</h4>
+    </div>
+
+    <div class="commentsareawrapper">
+      <div class="likesFeatureWrapper">
+        <i onclick="handlelikebutton(event)" id="horror10" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+        <span style="float: right;" id="idhorror10likes">0 likes</span>
+      </div>
+      <comment-component class="addCommentsForm" id="horror10comment"></comment-component>
+      <div class="commentsSection">
+        <h4 class="marginlessP"><span onclick="toggleComments()" class="commentsExpander">Show Comments</span></h4>
+        <div id="commentsContainer" style="display: none;"></div>
+      </div>
+    </div>
     <footer class="footer">
       <div class="contactContainer">
         <!--          <img-->
@@ -161,10 +180,4 @@
       <p>&copy; 2025 Brampton Film-Fest (Official Site)</p>
     </footer>
   </div>
-
 </body>
-<div id="loadingScreen">
-  <!-- Loading content goes here, e.g., a spinner or "Loading..." text -->
-  <div class="spinner"></div>
-  <p>Loading...</p>
-</div>
