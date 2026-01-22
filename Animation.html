@@ -54,17 +54,16 @@
 </head>
 <script src="database.js"></script>
 <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
-  import { getFirestore, doc, updateDoc, setDoc, collection, getDocs } from 'https://www.gstatic.com/firebasejs/12.4.0/firebase-firestore.js';
-  // Initialize Firebase
-  app = initializeApp(firebaseConfig);
-  db = getFirestore(app);
-  moviesCol = collection(db, 'movies');
-  count = 5;
-  setUpFns("animation", getDocs, doc, updateDoc, setDoc);
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
+    import { getFirestore, doc, updateDoc, setDoc, collection, getDocs } from 'https://www.gstatic.com/firebasejs/12.4.0/firebase-firestore.js';
+    // Initialize Firebase
+    app = initializeApp(firebaseConfig);
+    db = getFirestore(app);
+    moviesCol = collection(db, 'movies');
+    count = 4;
+    setUpFns("animation", getDocs, doc, updateDoc, setDoc);
 </script>
-
 <body>
   <div class="indexContainer">
     <div class="Header1 mobileView">
@@ -77,10 +76,10 @@
       </div>
 
 
-      <nav id="mnav" class="Header1 Nav mobilenav">
+     <nav id="mnav" class="Header1 Nav mobilenav">
         <div class="programicons"><a href="index.html">Home</a></div>
         <div class="programicons"><a href="Film Collection.html">Film Collection</a></div>
-        <div class="programicons"><a href="Selected films.html">2025 Official Selection</a></div>
+         <div class="programicons"><a href="Selected films.html">2025 Official Selection</a></div>
         <div class="programicons"><a href="About.html">About Us</a></div>
         <div class="programicons"><a href="Submit.html">Submit</a></div>
         <div class="programicons"><a href="Contact.html">Contact Us</a></div>
@@ -94,33 +93,27 @@
     <div class="filmpostercontainer">
       <div>
         <a href="eXperiment 1.html"><img class="filmposters" src="Images/Film Poster/Animation/eXperiment 1.png"
-            width="150" height="350"></a>
-        <i id="animation1" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
-        <span style="float: right;" id="idanimation1likes">0 likes</span>
+          width="150" height="350"></a>
+          <i id="animation1" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+          <span style="float: right;" id="idanimation1likes">0 likes</span>
       </div>
       <div>
-        <a href="The Three Scrawny Wolves.html"><img class="filmposters"
-            src="Images/Film Poster/Animation/The Three Scrawny Wolves.png" width="350" height="150"></a>
-        <i id="animation2" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
-        <span style="float: right;" id="idanimation2likes">0 likes</span>
+            <a href="The Three Scrawny Wolves.html"><img class="filmposters"
+          src="Images/Film Poster/Animation/The Three Scrawny Wolves.png" width="350" height="150"></a>
+          <i id="animation2" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+          <span style="float: right;" id="idanimation2likes">0 likes</span>
       </div>
       <div>
-        <a href="Those McPhuqurs.html"><img class="filmposters" src="Images/Film Poster/Animation/Those Mcphuqurs.png"
-            width="350" height="150"></a>
-        <i id="animation3" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
-        <span style="float: right;" id="idanimation3likes">0 likes</span>
+            <a href="Those McPhuqurs.html"><img class="filmposters" src="Images/Film Poster/Animation/Those Mcphuqurs.png"
+          width="350" height="150"></a>
+          <i id="animation3" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+          <span style="float: right;" id="idanimation3likes">0 likes</span>
       </div>
-      <div>
-        <a href="Artblocked.html"><img class="filmposters" src="Images/Film Poster/Animation/Artblocked.png" width="350"
-            height="150"></a>
-        <i id="animation4" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
-        <span style="float: right;" id="idanimation4likes">0 likes</span>
-      </div>
-         <div>
-        <a href="Trading Cards.html"><img class="filmposters" src="Images/Film Poster/Animation/Trading Cards 2.png" width="350"
-            height="150"></a>
-        <i id="animation5" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
-        <span style="float: right;" id="idanimation5likes">0 likes</span>
+            <div>
+            <a href="Artblocked.html"><img class="filmposters" src="Images/Film Poster/Animation/Artblocked.png"
+          width="350" height="150"></a>
+          <i id="animation4" class="fa fa-thumbs-up" style="font-size:24px;color:blue"></i>
+          <span style="float: right;" id="idanimation4likes">0 likes</span>
       </div>
 
     </div>
