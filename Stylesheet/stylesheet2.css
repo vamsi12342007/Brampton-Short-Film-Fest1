@@ -17,6 +17,11 @@ body {
   box-sizing: inherit;
 }
 
+.fa-thumbs-up{
+  pointer-events: none;
+  color: gray !important;
+}
+
 .filmbutton {
   position: relative;
   display: block;
